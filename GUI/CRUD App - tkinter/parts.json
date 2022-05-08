@@ -1,0 +1,14 @@
+{
+    "323192307165": {
+        "Name": "Part 1",
+        "Customer": "Customer 1",
+        "Retailer": "Retailer 1",
+        "Price": 10000.0
+    },
+    "047410047204": {
+        "Name": "Part 2",
+        "Customer": "Customer 2",
+        "Retailer": "Retailer 2",
+        "Price": 20000.0
+    }
+}
