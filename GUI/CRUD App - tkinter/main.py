@@ -410,7 +410,7 @@ update_btn = ttk.Button(text="Update Part", style="Accentbutton", command=update
 update_btn.config(width=15)
 update_btn.grid(row=2, column=2)
 
-clear_btn = ttk.Button(text="Clear Input",  style="Accentbutton", command=clear)
+clear_btn = ttk.Button(text="Clear Input", style="Accentbutton", command=clear)
 clear_btn.config(width=15)
 clear_btn.grid(row=2, column=3)
 
