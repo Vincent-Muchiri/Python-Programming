@@ -135,6 +135,7 @@ for tanks in range(10):
     random_ycor = random.randint(-220, 220)
     enemy_tank.goto(random_xcor, random_ycor)
 
+
     overlapping = True
     count=0
 
