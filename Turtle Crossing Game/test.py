@@ -16,4 +16,3 @@ for size in range(4):
                 new_list[num] = random.randint(0, 9)
 
 print(new_list)
-
