@@ -137,6 +137,7 @@ for tanks in range(10):
 
     overlapping = True
     count=0
+
     while overlapping:
         count+=1
         distances = []
