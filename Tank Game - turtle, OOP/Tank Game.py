@@ -51,19 +51,23 @@ def move_down():
     player_tank.forward(20)
 
 
-def move_enemy_tanks():
-    for enemy in enemy_tanks_list:
-        print(enemy)
-        enemy_tanks_list.remove(enemy)
-        for tank in enemy_tanks_list:
-            print(enemy_tanks_list)
-            # print(enemy.distance(tank))
-            # if enemy.distance(tank) <= 10:
-            #     heading_image_pair = random.choice(HEADING_IMAGE_TUPLE)
-            #     tank.setheading(heading_image_pair[0])
-            #     tank.shape(heading_image_pair[1])
-            # else:
-            #     enemy.forward(20)
+# def move_enemy_tanks():
+#     new_tank_list = []
+#     new_tank_list = enemy_tanks_list
+#     for enemy in new_tank_list:
+#         new_tank_list.remove(enemy)
+#         for tank in new_tank_list:
+#             # print(enemy_tanks_list)
+#             # print(enemy.distance(tank))
+#             if enemy.distance(tank) <= 10:
+#                 heading_image_pair = random.choice(HEADING_IMAGE_TUPLE)
+#                 tank.setheading(heading_image_pair[0])
+#                 tank.shape(heading_image_pair[1])
+#                 print("Collision imminent")
+#             else:
+#                 print("Forward")
+#                 enemy.forward(20)
+
 
 
 
@@ -111,20 +115,91 @@ player_tank.shape("./images/Player Tank/Up.gif")
 window.update()
 
 enemy_tanks_list = []
+
+print(player_tank)
+all_tanks_list = [player_tank]
+
 # TODO Create enemy tanks
-for tanks in range(4):
+for tanks in range(10):
     enemy_tank = Turtle()
     enemy_tank.penup()
     heading_image_pair = random.choice(HEADING_IMAGE_TUPLE)
     enemy_tank.setheading(heading_image_pair[0])
     enemy_tank.shape(heading_image_pair[1])
 
+    enemy_tanks_list.append(enemy_tank)
+    all_tanks_list.append(enemy_tank)
+
     # TODO Place enemy tanks randomly
     random_xcor = random.randint(-370, 70)
     random_ycor = random.randint(-220, 220)
     enemy_tank.goto(random_xcor, random_ycor)
 
-    enemy_tanks_list.append(enemy_tank)
+    overlapping = True
+    count=0
+    while overlapping:
+        count+=1
+        distances = []
+        for tank in all_tanks_list[:-1]:
+            distances.append(tank.distance(enemy_tank))
+
+        print(distances)
+
+        for dis in distances:
+            if dis <= 60:
+                random_xcor = random.randint(-370, 70)
+                random_ycor = random.randint(-220, 220)
+                enemy_tank.goto(random_xcor, random_ycor)
+            else:
+                overlapping = False
+
+    print(count)
+    # # TODO Place enemy tanks randomly
+    # random_xcor = random.randint(-370, 70)
+    # random_ycor = random.randint(-220, 220)
+    # enemy_tank.goto(random_xcor, random_ycor)
+    #
+    # # TODO Check whether the tanks overlap
+    # current_tank = all_tanks_list[-1]
+    # print(len(all_tanks_list))
+
+    # for tank in all_tanks_list[:-1]:
+    #     print(f"{tank} - {current_tank} = {tank.distance(current_tank)}")
+    #     if tank.distance(current_tank) <= 60:
+    #         print("Overlap")
+    #         random_xcor = random.randint(-370, 70)
+    #         random_ycor = random.randint(-220, 220)
+    #         current_tank.goto(random_xcor, random_ycor)
+    #         print(tank.distance(current_tank))
+    #
+    #     else:
+    #         tank_overlap = False
+    #         print("No overlap")
+    #
+    # still_overlapping = True
+    # while still_overlapping:
+    #     for tank in all_tanks_list[:-1]:
+    #         print(f"{tank} - {current_tank} = {tank.distance(current_tank)}")
+    #         if tank.distance(current_tank) <= 60:
+    #             print("Overlap")
+    #             random_xcor = random.randint(-370, 70)
+    #             random_ycor = random.randint(-220, 220)
+    #             current_tank.goto(random_xcor, random_ycor)
+    #             print(tank.distance(current_tank))
+    #         else:
+    #             still_overlapping = False
+    #             print("No overlap")
+
+    print("")
+
+# TODO Check whether there is still an overlap
+for tank in all_tanks_list:
+    for t in all_tanks_list:
+        dis = tank.distance(t)
+        if dis == 0:
+            pass
+        elif dis <= 60:
+            print(dis)
 
 
 # TODO Create movement
@@ -139,8 +214,8 @@ is_game_on = True
 while is_game_on:
     window.update()
     border()
-    move_enemy_tanks()
-    time.sleep(0.5)
+    # move_enemy_tanks()
+    time.sleep(0.1)
 
 
     # prevent_overlap()
