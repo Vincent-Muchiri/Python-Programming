@@ -12,52 +12,45 @@ recipient_letter = ""
 recipient_email = ""
 
 # TODO Read CSV data
-birthdates_df = pandas.read_csv("birthdays.csv")
+birth_dates_df = pandas.read_csv("./birthdays.csv")
 
 # for orientation in ("dict", "list", "series", "split", "records", "index"):
-#     print(birthdates_df.to_dict(orient=orientation))
+#     print(birth_dates_df.to_dict(orient=orientation))
 #     print("")
 
-birthdates_dict = birthdates_df.to_dict(orient="records")
-# print(birthdates_dict)
+birth_dates_dict = birth_dates_df.to_dict(orient="records")
+# print(birth_dates_dict)
 
-test_date = datetime.datetime(year=1973, month=6, day=14)
+test_date = datetime.datetime(year=1997, month=9, day=11)
 
 # TODO Loop through month and date in CSV and check whether the date matches
-for birthday_data in birthdates_dict:
+for birthday_data in birth_dates_dict:
     if birthday_data["month"] == test_date.month and birthday_data["day"] == test_date.day:
+        # TODO Get the name of the recipient and email address
+        recipient_name = birthday_data["name"]
+        recipient_email = birthday_data["email"]
+
         # TODO Open the text a random text file
         template_letter = f"./letter_templates/letter_{random.randint(1, 3)}.txt"
+
         with open(template_letter, mode="r") as letter:
-            letter_contents = letter.readlines()
-            # print(letter_contents)
+            # letter_contents = letter.readlines() Using readlines() outputs a list with each line as an elem.
+            # This makes it harder to send the letter
+            letter_contents = letter.read() # Outputs a string
+
+        # TODO Replace the [NAME] with the recipient's name and save it to a separate file
+        letter_contents = letter_contents.replace("[NAME]", recipient_name)
 
         # TODO Generate a recipient letter
-        recipient_letter = f"{birthday_data['name']}_birthday_letter.txt"
-        # print(recipient_letter)
-
-        # TODO Remove empty lines
-        # for line in letter_contents:
-        #     if line == '\n':
-        #         letter_contents.remove(line)
-        # print(letter_contents)
-        # TODO Replace the [NAME] with the recipient's name and save it to a separate file
-        letter_contents[0] = f"Hey {birthday_data['name']},\n"
-        # print(letter_contents)
-
-        # TODO Add the data in the list to a file
-        with open(f"./sent_letters/{recipient_letter}", mode="w") as birthday_letter:
-            for line in letter_contents:
-                birthday_letter.write(line)
-
-        # TODO Get the email address
-        recipient_email = birthday_data["email"]
+        recipient_letter = f"{recipient_name}_birthday_letter.txt"
 
         # TODO Send the email
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
             connection.login(user=MY_EMAIL, password=MY_PASSWORD)
-            connection.sendmail(to_addrs=recipient_email,
-                                from_addr=MY_EMAIL,
-                                msg=f"Subject:Happy Birthday {birthday_data['name']}\n\n"
-                                    f"{letter_contents}")
+            connection.sendmail(
+                from_addr=MY_EMAIL,
+                to_addrs=recipient_email,
+                msg=f"Subject:Happy Birthday {recipient_name}\n\n"
+                    f"{letter_contents}"
+            )
