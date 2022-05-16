@@ -7,7 +7,7 @@ import datetime as dt
 # Outlook = smtp-mail.outlook.com, 587
 
 my_email = "tripiestands@gmail.com"
-password = "F2i9lFnl8Wb0!C)"
+password = "Enter Password"
 
 # TODO Create connection
 with smtplib.SMTP("smtp.gmail.com") as connection:
