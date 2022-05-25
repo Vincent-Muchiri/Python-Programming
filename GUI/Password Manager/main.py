@@ -149,7 +149,7 @@ def save():
             try:
                 with open("data.json", mode="r") as json_file:
                     data = json.load(json_file)
-                    # print(data)
+                    print(data)
                     # some_dict = {"Test": "Passed"}
                     # data.update(some_dict)
 
@@ -166,6 +166,7 @@ def save():
                         messagebox.showinfo(message="Data was added successfully")
             else:
                 data.update(data_dict)
+                print(data)
                 # print(type(data))
                 with open("data.json", mode="w") as json_file:
                     json.dump(data, json_file, indent=4)
