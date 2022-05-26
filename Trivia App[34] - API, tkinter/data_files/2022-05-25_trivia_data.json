@@ -1,0 +1,102 @@
+[
+    {
+        "category": "History",
+        "type": "boolean",
+        "difficulty": "easy",
+        "question": "The Tiananmen Square protests of 1989 were held in Hong Kong.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "category": "Geography",
+        "type": "boolean",
+        "difficulty": "medium",
+        "question": "There are no roads in/out of Juneau, Alaska.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "category": "Sports",
+        "type": "boolean",
+        "difficulty": "easy",
+        "question": "Peyton Manning retired after winning Super Bowl XLIX.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "category": "Entertainment: Comics",
+        "type": "boolean",
+        "difficulty": "medium",
+        "question": "In the webcomic Homestuck, the first character introduced is Dave Strider.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "category": "General Knowledge",
+        "type": "boolean",
+        "difficulty": "easy",
+        "question": "When you cry in space, your tears stick to your face.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "category": "Entertainment: Music",
+        "type": "boolean",
+        "difficulty": "medium",
+        "question": "EDM label Monstercat signs tracks instead of artists.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "category": "General Knowledge",
+        "type": "boolean",
+        "difficulty": "medium",
+        "question": "Albert Einstein had trouble with mathematics when he was in school.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "category": "Science & Nature",
+        "type": "boolean",
+        "difficulty": "medium",
+        "question": "Sugar contains fat.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "category": "General Knowledge",
+        "type": "boolean",
+        "difficulty": "medium",
+        "question": "The British organisation CAMRA stands for The Campaign for Real Ale.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "category": "Sports",
+        "type": "boolean",
+        "difficulty": "easy",
+        "question": "There are a total of 20 races in Formula One 2016 season.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    }
+]
