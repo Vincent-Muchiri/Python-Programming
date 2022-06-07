@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 
-
 # ------------------------------------ TODO Converting a string to date and time ---------------------------------------
 string = "2022-05-28T10:30:00+02:00"
 
@@ -33,6 +32,7 @@ current_timestamp = datetime.timestamp(current_datetime)
 
 # TODO Using time library to get timestamp
 from time import time
+
 other_ts = time()
 # print(other_ts)
 
@@ -50,6 +50,7 @@ print("The current utc time is = ", current_utc)
 
 # TODO Convert datetime object to UTC
 import pytz
+
 # Get current time in local timezone
 local_dt = datetime.now()
 print('Current Local Time: ', local_dt)
