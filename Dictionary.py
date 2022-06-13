@@ -1,30 +1,62 @@
-programming_dictionary = {
-    "Bug" : "An unexpected problem with software or hardware",
-    "Function": "Self contained modules of code that accomplish a specific task",
-    404: "A signal that the webpage does not exist"
-}
+programming_dictionary = {"Bug": "An unexpected problem with software or hardware",
+                          "Function": "Self contained modules of code that accomplish a specific task", 404: "An error",
+                          "Loop": "A sequence of instruction s that is continually repeated until a certain condition " \
+                                  "is reached "}
 
-#Retrieving items in a dictionary
+# TODO Retrieving items in a dictionary
 # print(programming_dictionary[404])
 
-#Adding items to a dictionary
-programming_dictionary["Loop"] = "A sequence of instruction s that is continually repeated until a certain condition is reached"
+# TODO Adding items to a dictionary
 # print(programming_dictionary)
 
-#Edit an item in a dictionary
-programming_dictionary[404] = "An error"
+# TODO Edit an item in a dictionary
 
-#Looping through a dictionary
+# TODO Looping through a dictionary
 for key in programming_dictionary:
-    print(key)
-    print(programming_dictionary[key])
+    pass
+    # print(key)
+    # print(programming_dictionary[key])
 
 for (key, value) in programming_dictionary.items():
-    print(key)
-    print(value)
+    pass
+    # print(key)
+    # print(value)
 
-#Create an empty dictionary
+# TODO Create an empty dictionary
 empty_dictionary = {}
 programming_dictionary = {}
 
+dict_list = [{'Class': "Form 1 East",
+              "Name": "Vincent",
+              "Marks": 98},
+             {'Class': "Form 2 North",
+              "Name": "Diana",
+              "Marks": 80},
+             {'Class': "Form 4 West",
+              "Name": "Mark",
+              "Marks": 20},
+             {'Class': "Form 2 East",
+              "Name": "Sam",
+              "Marks": 24},
+             {'Class': "Form 3 South",
+              "Name": "Leah",
+              "Marks": 87},
+             {'Class': "Form 1 East",
+              "Name": "Paul",
+              "Marks": 67}
+             ]
 
+
+# TODO Sort a list of dict based on one parameter
+from operator import itemgetter
+
+sort_by_class = sorted(dict_list, key=itemgetter('Class'))
+print(sort_by_class)
+
+# TODO Sort a list based on two parameters
+sort_by_class_marks = sorted(dict_list, key=lambda student_dict: (student_dict['Class'], student_dict['Marks']))
+print(sort_by_class_marks)
+
+# TODO Sort in descending order
+sort_by_class_marks = sorted(dict_list, key=lambda student_dict: (student_dict['Class'], student_dict['Marks']), reverse=True)
+print(sort_by_class_marks)
