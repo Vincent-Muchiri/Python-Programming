@@ -6,6 +6,14 @@ programming_dictionary = {"Bug": "An unexpected problem with software or hardwar
 # TODO Retrieving items in a dictionary
 # print(programming_dictionary[404])
 
+# TODO Getting the key and values of elements of a dict using indexes
+first_key = list(programming_dictionary.keys())[0]
+first_value = list(programming_dictionary.values())[0]
+first_key_value_tuple = list(programming_dictionary.items())[0]
+
+# print(first_key, first_value)
+# print(first_key_value_tuple)
+
 # TODO Adding items to a dictionary
 # print(programming_dictionary)
 
