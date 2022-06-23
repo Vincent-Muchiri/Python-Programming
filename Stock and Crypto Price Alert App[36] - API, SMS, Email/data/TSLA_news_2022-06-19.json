@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 76,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "MarketWatch"
+            },
+            "author": "Steve Goldstein",
+            "title": "Need to Know: This trashy asset class can withstand a great deal more pain, fund manager says",
+            "description": "Junk bond yields have surpassed 8% \u2014 meaning they can absorb a rising default rate.",
+            "url": "https://www.marketwatch.com/story/this-trashy-asset-class-can-withstand-a-great-deal-more-pain-fund-manager-says-11655463038",
+            "urlToImage": "https://images.mktw.net/im-380982/social",
+            "publishedAt": "2022-06-17T10:50:00Z",
+            "content": "Few assets have been safe this year from the pummeling in financial markets, and junk bonds also have been rather, well, trashy. Year-to-date, the SPDR Bloomberg High Yield Bond ETF \r\n JNK,\r\n -1.66%\r\u2026 [+4239 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MarketWatch"
+            },
+            "author": "Barbara Kollmeyer",
+            "title": "Need to Know: In a tough post-Fed market, strategist finds opportunity knocking in a couple of this year\u2019s hottest sectors",
+            "description": "A tough U.S. session is setting up, and one strategist has sifted through the market rubble to find opportunities.",
+            "url": "https://www.marketwatch.com/story/in-a-tough-post-fed-market-strategist-finds-opportunity-knocking-in-a-couple-of-this-years-hottest-sectors-11655378627",
+            "urlToImage": "https://images.mktw.net/im-565436/social",
+            "publishedAt": "2022-06-16T11:23:00Z",
+            "content": "Blink and you missed a post-Federal Reserve bounce, as stock futures signal a reboot for Wall Street selling on Thursday. Whatever reaction we see today is likely to be a one-day thing (just like las\u2026 [+6702 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Alexis Keenan",
+            "title": "Musk leaves biggest Twitter question unanswered: Will he buy the company?",
+            "description": "Tesla (TSLA) and SpaceX CEO Elon Musk avoided a question on Thursday that for weeks has weighed on the minds of Twitter's (TWTR) employees and investors...",
+            "url": "https://finance.yahoo.com/news/musk-meet-twitter-employees-deal-185425705.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/JoO7zFdySZvus7rhpzRIRA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2022-06/2dd308e0-eda3-11ec-b56d-4710f49ee802",
+            "publishedAt": "2022-06-16T18:54:25Z",
+            "content": "Tesla (TSLA) and SpaceX CEO Elon Musk avoided a question on Thursday that for weeks has weighed on the minds of Twitter's (TWTR) employees and investors: Does he still intend to buy the social media \u2026 [+3519 chars]"
+        }
+    ]
+}
