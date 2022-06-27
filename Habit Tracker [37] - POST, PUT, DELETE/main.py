@@ -4,6 +4,10 @@ from datetime import datetime
 import tkinter as tk
 from tkinter import messagebox
 
+# Make this a CRUD app
+# Add a date picker
+# Add a graph
+
 USERNAME = os.environ['pixela_username']
 TOKEN = os.environ['pixela_token']
 
