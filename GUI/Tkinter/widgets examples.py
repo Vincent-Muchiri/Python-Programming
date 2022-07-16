@@ -4,6 +4,7 @@ from tkinter import *
 window = Tk()
 window.title("Widget Examples")
 window.minsize(width=500, height=500)
+window.config(padx=20)
 
 #Labels
 label = Label(text="This is old text")
@@ -83,5 +84,13 @@ for item in fruits:
 listbox.bind("<<ListboxSelect>>", listbox_used)
 listbox.pack()
 
+# Labelframe
+example_labelframe = LabelFrame(text="Labelframe")
+example_labelframe.pack(fill="both")
+
+new_label = Label(example_labelframe, text="This is a labelframe widget")
+new_label.pack()
+
+# Calendar widget
 window.mainloop()
 
