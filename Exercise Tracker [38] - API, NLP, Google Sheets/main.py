@@ -4,6 +4,7 @@ from tkinter import *
 import tkinter.ttk as ttk
 from tkinter import messagebox
 from datetime import datetime
+from pprint import pprint
 
 
 API_KEY = "e288d2fa80fb4a8c703ad3b1e14b7be6"
@@ -18,13 +19,41 @@ sheety_header = {
     'Content-Type': 'json'
 }
 
-sheety_get_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/workoutTracker/sheet1"
-sheety_post_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/workoutTracker/sheet1"
-sheety_put_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/workoutTracker/sheet1/[Object ID]"
-sheety_delete_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/workoutTracker/sheet1/[Object ID]"
+sheety_get_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38"
+sheety_post_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38"
+sheety_put_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38/[Object ID]"
+sheety_delete_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38/[Object ID]"
 
 
 # --------------------------------------------------- Functions --------------------------------------------------------
+# TODO Test Get
+# test_get_response = requests.get(sheety_get_endpoint)
+# test_get_response.raise_for_status()
+# sheet_data = test_get_response.json()
+# pprint(sheet_data)
+
+# TODO Test Put
+test_dict = {'workoutTrackerDay38': {'date': '18/07/2022', 'time': '05:52:10', 'exercise': 'Running', 'duration': 60, 'caloriesBurnt': 758.52}}
+test_dict2 = {'workoutTrackerDay38': [{'date': '18/07/2022', 'time': '13:05:59', 'exercise': 'Running', 'duration': 60, 'caloriesBurnt': 725.2}, {'date': '18/07/2022', 'time': '13:05:59', 'exercise': 'Swimming', 'duration': 20, 'caloriesBurnt': 148}]}
+#
+# response = requests.post(url=sheety_post_endpoint, json=test_dict2)
+# response.raise_for_status()
+# print(response.text)
+
+
+def camel_case_changer(original_str):
+    final_str = ""
+
+    strings_list = original_str.split(" ")
+    for string in strings_list:
+        if strings_list.index(string) == 0:
+            final_str = string.lower()
+        else:
+            final_str += string.title()
+
+    return final_str
+
+
 def upload_workout_window(exercise_dict):
     # --------------------------------------------------- Functions ----------------------------------------------------
     # TODO Get the current date and time as strings
@@ -34,14 +63,13 @@ def upload_workout_window(exercise_dict):
     time_str = time_obj.strftime("%H:%M:%S")
 
     def upload_workout():
-        # TODO Get entry values
-        sheet_name = sheetname_entry.get().lower()
+        # TODO Get entry values and convert sheet name to camel case
+        sheet_name = camel_case_changer(sheetname_entry.get())
         date = date_entry.get()
         time = time_entry.get()
 
         # TODO Initialise dicts and lists
-        cleaned_workout_dict = {}
-        rows_list = []
+        sheet_data_dict = {}
         exercise_list = exercise_dict["exercises"]
 
         # TODO Append dicts in the list
@@ -51,40 +79,35 @@ def upload_workout_window(exercise_dict):
             row['time'] = time_str
             row['exercise'] = workout['name'].title()
             row['duration'] = workout['duration_min']
-            row['calories'] = workout['nf_calories']
+            row['caloriesBurnt'] = workout['nf_calories']
 
-            # TODO Append the dict to the list
-            rows_list.append(row)
+            sheet_data_dict[sheet_name] = row
+            # print(sheet_data_dict)
 
-        # TODO Add the rows in the dict
-        cleaned_workout_dict[sheet_name] = rows_list
-        print(cleaned_workout_dict)
+            # TODO Call API
+            try:
+                response = requests.post(url=sheety_post_endpoint, json=sheet_data_dict)
+            except:
+                messagebox.showerror(message=response.text)
+            else:
+                pass
 
-        # TODO Call API
-        try:
-            test_dict = {'sheet1': {'date': '18/07/2022', 'time': '05:52:10', 'exercise': 'Running', 'duration': 60, 'calories': 758.52}}
-            response = requests.post(url=sheety_post_endpoint, json=cleaned_workout_dict)
-        except:
-            messagebox.showerror(message=response.text)
-        else:
-            print(response.text)
-            print(response.json())
-            messagebox.showinfo(message="Workout data uploaded successfully to Google Sheets")
+        messagebox.showinfo(message="Workout data uploaded successfully to Google Sheets")
 
-            # TODO Clear the entries
-            # date_entry.delete(0, END)
-            # time_entry.delete(0, END)
-            # sheetname_entry.delete(0, END)
+        # TODO Clear the entries
+        # date_entry.delete(0, END)
+        # time_entry.delete(0, END)
+        # sheetname_entry.delete(0, END)
 
-            # TODO Delete all the entries
-            query_text.delete("1.0", END)
-            gender_radio_state.set(value="")
-            weight_entry.delete(0, END)
-            height_entry.delete(0, END)
-            age_entry.delete(0, END)
+        # TODO Delete all the entries
+        query_text.delete("1.0", END)
+        gender_radio_state.set(value="")
+        weight_entry.delete(0, END)
+        height_entry.delete(0, END)
+        age_entry.delete(0, END)
 
-            # TODO Close toplevel
-            upload_workout_toplevel.destroy()
+        # TODO Close toplevel
+        upload_workout_toplevel.destroy()
 
     # ----------------------------------------------------- UI ---------------------------------------------------------
     upload_workout_toplevel = Toplevel()
@@ -126,6 +149,7 @@ def upload_workout_window(exercise_dict):
     sheetname_label.grid(row=0, column=0)
 
     sheetname_entry = ttk.Entry(sheetname_frame)
+    sheetname_entry.insert(0, "workoutTrackerDay38")
     sheetname_entry.grid(row=0, column=1, padx=20)
 
     # TODO Upload button
@@ -134,7 +158,7 @@ def upload_workout_window(exercise_dict):
     upload_btn.pack(pady=20)
 
 
-def submit_workout():
+def process_workout_data():
     # TODO Check whether fields are empty
     if query_text.get("1.0", END) == "\n":
         messagebox.showerror(message="Please enter a query")
@@ -179,18 +203,16 @@ def submit_workout():
         except:
             messagebox.showerror(message=response.text)
         else:
-            print(response.json())
+            # print(response.json())
             workout_json = response.json()
 
             # TODO Prompt the user to upload data to Google sheets
             answer = messagebox.askyesno(message="Data processed successfully.\n"
                                                  "Do you wish to save the workout in Google Sheets?")
 
-            print(answer)
             if answer:
                 # TODO Open a pop up window
                 upload_workout_window(exercise_dict=workout_json)
-
 
 
 # ------------------------------------------------------- UI -----------------------------------------------------------
@@ -255,7 +277,7 @@ age_entry = ttk.Entry(general_frame)
 age_entry.grid(row=2, column=1)
 
 # TODO Submit button
-submit_btn = ttk.Button(text="Process Data", style="Accentbutton", command=submit_workout)
+submit_btn = ttk.Button(text="Process Data", style="Accentbutton", command=process_workout_data)
 submit_btn.config(width=20)
 submit_btn.pack()
 
