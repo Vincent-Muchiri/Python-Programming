@@ -1,0 +1,27 @@
+                    Threading                       |                          Multiprocessing
+- A new thread is pawned withing the existing       | A new process is started independent of the first process
+process                                             |
+- Starting a thread is faster than staring a        | Starting a process is slower than starting a thread
+process                                             |
+- Memory is shared between all threads, low memory  | Memory is not shared between processes, large memory footprint
+footprint
+- Mutexes often necessary to control access to      | Mutexes not necessary (unless threading in the new process
+shared data                                         |
+- One GIL(Global Interpreter Lock) for all threads  | One GIL for each process
+- Code harder to understand and to get right - the  | Code is usually straightforward
+potential for race conditions increases
+- Not interruptible/ killable                       | Child processes are interruptible/ killable
+
+Process
+- A program that has been loaded into memory along with all the resources it needs to operate.
+- It has its own memory space.
+
+Thread
+- A unit of execution within a process.
+- A process can have multiple threads running as a part of it, where each thread uses the process's memory space and
+shares it with other threads.
+
+IO-bound functions vs CPU-bound functions
+- The CPU sits idle and pass time while for CPU bound functions the CPU is busy churning out a few numbers
+
+
