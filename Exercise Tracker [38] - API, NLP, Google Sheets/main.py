@@ -11,6 +11,7 @@ import os
 NUTRITIONIX_API_KEY = os.environ["NUTRITIONIX_API_KEY"]
 NUTRITIONIX_APP_ID = os.environ["NUTRITIONIX_APP_ID"]
 SHEETY_API_KEY = os.environ["SHEETY_API_KEY"]
+SHEETY_BEARER_TOKEN = os.environ["SHEETY_BEARER_TOKEN"]
 
 exercise_url = "https://trackapi.nutritionix.com/v2/natural/exercise"
 exercise_headers = {
@@ -18,7 +19,7 @@ exercise_headers = {
     'x-app-key': NUTRITIONIX_API_KEY
 }
 sheety_header = {
-    'Content-Type': 'json'
+    'Authorization': f"Bearer {SHEETY_BEARER_TOKEN}"
 }
 
 sheety_get_endpoint = f"https://api.sheety.co/{SHEETY_API_KEY}/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38"
@@ -89,7 +90,7 @@ def upload_workout_window(exercise_dict):
 
             # TODO Call API
             try:
-                response = requests.post(url=sheety_post_endpoint, json=sheet_data_dict)
+                response = requests.post(url=sheety_post_endpoint, json=sheet_data_dict, headers=sheety_header)
             except:
                 messagebox.showerror(message=response.text)
             else:
