@@ -7,12 +7,10 @@ from datetime import datetime
 from pprint import pprint
 import os
 
-
-# NUTRITIONIX_API_KEY = "e288d2fa80fb4a8c703ad3b1e14b7be6"
-# NUTRITIONIX_APP_ID = "8fef804a"
 # TODO Environmental variables
 NUTRITIONIX_API_KEY = os.environ["NUTRITIONIX_API_KEY"]
 NUTRITIONIX_APP_ID = os.environ["NUTRITIONIX_APP_ID"]
+SHEETY_API_KEY = os.environ["SHEETY_API_KEY"]
 
 exercise_url = "https://trackapi.nutritionix.com/v2/natural/exercise"
 exercise_headers = {
@@ -23,10 +21,10 @@ sheety_header = {
     'Content-Type': 'json'
 }
 
-sheety_get_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38"
-sheety_post_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38"
-sheety_put_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38/[Object ID]"
-sheety_delete_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38/[Object ID]"
+sheety_get_endpoint = f"https://api.sheety.co/{SHEETY_API_KEY}/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38"
+sheety_post_endpoint = f"https://api.sheety.co/{SHEETY_API_KEY}/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38"
+sheety_put_endpoint = f"https://api.sheety.co/{SHEETY_API_KEY}/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38/[Object ID]"
+sheety_delete_endpoint = f"https://api.sheety.co/{SHEETY_API_KEY}/pythonProgrammingGoogleSheetsApi/workoutTrackerDay38/[Object ID]"
 
 
 # --------------------------------------------------- Functions --------------------------------------------------------
