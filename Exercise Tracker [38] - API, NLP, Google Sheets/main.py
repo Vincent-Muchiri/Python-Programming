@@ -5,15 +5,19 @@ import tkinter.ttk as ttk
 from tkinter import messagebox
 from datetime import datetime
 from pprint import pprint
+import os
 
 
-API_KEY = "e288d2fa80fb4a8c703ad3b1e14b7be6"
-APP_ID = "8fef804a"
+# NUTRITIONIX_API_KEY = "e288d2fa80fb4a8c703ad3b1e14b7be6"
+# NUTRITIONIX_APP_ID = "8fef804a"
+# TODO Environmental variables
+NUTRITIONIX_API_KEY = os.environ["NUTRITIONIX_API_KEY"]
+NUTRITIONIX_APP_ID = os.environ["NUTRITIONIX_APP_ID"]
 
 exercise_url = "https://trackapi.nutritionix.com/v2/natural/exercise"
 exercise_headers = {
-    'x-app-id': APP_ID,
-    'x-app-key': API_KEY
+    'x-app-id': NUTRITIONIX_APP_ID,
+    'x-app-key': NUTRITIONIX_API_KEY
 }
 sheety_header = {
     'Content-Type': 'json'
@@ -41,6 +45,7 @@ test_dict2 = {'workoutTrackerDay38': [{'date': '18/07/2022', 'time': '13:05:59',
 # print(response.text)
 
 
+# TODO Change strings to camel case
 def camel_case_changer(original_str):
     final_str = ""
 
@@ -90,6 +95,7 @@ def upload_workout_window(exercise_dict):
             except:
                 messagebox.showerror(message=response.text)
             else:
+                # print("Sheety API works")
                 pass
 
         messagebox.showinfo(message="Workout data uploaded successfully to Google Sheets")
@@ -149,7 +155,7 @@ def upload_workout_window(exercise_dict):
     sheetname_label.grid(row=0, column=0)
 
     sheetname_entry = ttk.Entry(sheetname_frame)
-    sheetname_entry.insert(0, "workoutTrackerDay38")
+    sheetname_entry.insert(0, "Workout Tracker Day 38")
     sheetname_entry.grid(row=0, column=1, padx=20)
 
     # TODO Upload button
