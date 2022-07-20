@@ -190,6 +190,11 @@ def process_workout_data():
         height = float(height_entry.get())
         age = int(age_entry.get())
 
+        # TODO Assert the values
+        assert weight > 0, messagebox.showerror(message="The weight should be greater then zero")
+        assert height > 0, messagebox.showerror(message="The height should be greater then zero")
+        assert age > 0, messagebox.showerror(message="The age should be greater then zero")
+
         # TODO Remove the "\n" from the query string
         query = query.strip("\n")
 
