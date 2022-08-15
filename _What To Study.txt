@@ -1,0 +1,2 @@
+1. Study more on comprehensions
+2. Window.after(ms, funct)
