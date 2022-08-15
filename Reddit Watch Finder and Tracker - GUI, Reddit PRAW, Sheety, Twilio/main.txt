@@ -1,0 +1,11 @@
+GUI
+Entries - model, date of manufacture, price etc - Research more on Reddit posts
+Dropdown - brand
+Radiobutton - state(used or new)
+Buttons - Search, Save Search, Track watch, Delete search, Remove from tracking, Edit search, Edit tracking
+Treeview - Search history with tracking field and results from search field
+
+Functionality
+Save searches and tracks in treeview, local CSV file, and different sheets in Google sheets
+If a watch is available record number of results in treeview and local csv. Open window with reddit titles and links
+that are scrollable from the cheapest to the most expensive

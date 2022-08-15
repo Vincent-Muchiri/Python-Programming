@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": ,
+  "private_key_id": ,
+  "private_key": ,
+  "client_email": "vincentgoogledrive@hundred-days-of-code-python.iam.gserviceaccount.com",
+  "client_id": "109597027533642669161",
+  "auth-url": ,
+  "token_url": ,
+  "auth_provider_x509_cert_url": ,
+  "client_x509_cert_url":
+}

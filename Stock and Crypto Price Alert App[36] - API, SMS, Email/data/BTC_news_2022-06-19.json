@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 214,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "Davidgerard.co.uk"
+            },
+            "author": null,
+            "title": "Bitcoin drops below $20k, Ether cracks $1k \u2013 what this means",
+            "description": "A huge Rube Goldberg machine slapstick custard pie clown car, where each custard pie triggers three more custard pies.",
+            "url": "https://davidgerard.co.uk/blockchain/2022/06/18/bitcoin-drops-below-20000-ether-cracks-1000-what-this-means/",
+            "urlToImage": "https://davidgerard.co.uk/blockchain/wp-content/uploads/2022/06/celebrations-in-australia-20000.jpg",
+            "publishedAt": "2022-06-18T14:20:48Z",
+            "content": "I was woken at eight this morning (BST) by my Signal pinging repeatedly. Bitcoin had finally broken $20,000 dropping $1,200 in five minutes. I declare this bubble conclusively popped.\r\nCrypto\u2019s been \u2026 [+9007 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Motley Fool"
+            },
+            "author": "newsfeedback@fool.com (Travis Hoium)",
+            "title": "Why Crypto Prices Crashed on Saturday",
+            "description": "Crypto firms appear to be collapsing and that's causing widespread selling in the market.",
+            "url": "https://www.fool.com/investing/2022/06/18/why-crypto-crashed-on-saturday/",
+            "urlToImage": "https://g.foolcdn.com/editorial/images/685755/bitcoin-crash.jpg",
+            "publishedAt": "2022-06-18T22:49:20Z",
+            "content": "What happened\u00a0\r\nAfter a terrible week for cryptocurrencies, the weekend isn't off to a good start either. Fear that there will be continuing fallout from the potential collapse of the Celsius Network\u2026 [+2499 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Motley Fool"
+            },
+            "author": "newsfeedback@fool.com (Neil Patel)",
+            "title": "Can Bitcoin Reach $100,000?",
+            "description": "Despite recent market weakness, the path to a six-figure price target is not hard to imagine.",
+            "url": "https://www.fool.com/investing/2022/06/18/can-bitcoin-reach-100000/",
+            "urlToImage": "https://g.foolcdn.com/editorial/images/683771/stock-chart-on-phone.jpg",
+            "publishedAt": "2022-06-18T13:00:00Z",
+            "content": "Since hitting an all-time high of almost $69,000 last November, Bitcoin's (BTC -7.90%) price has plunged about 70% as of this writing as investors have soured on risky assets. But despite the poor re\u2026 [+4613 chars]"
+        }
+    ]
+}
