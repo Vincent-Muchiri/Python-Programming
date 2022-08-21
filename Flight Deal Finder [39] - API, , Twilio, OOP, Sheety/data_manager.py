@@ -15,6 +15,7 @@ post_sheety_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/p
 put_sheety_endpoint = "https://api.sheety.co/8d71f9dad050e97aca87b3b97e94d5d9/pythonProgrammingGoogleSheetsApi/" \
                       "flightDealFinderDay39/[Object ID]"
 
+
 class DataManager:
     """This class is responsible for talking to the Google Sheet."""
 

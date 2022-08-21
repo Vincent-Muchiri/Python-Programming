@@ -42,8 +42,10 @@ tree.grid(row=0, column=0, sticky='nsew')
 
 # add a scrollbar
 scrollbar = ttk.Scrollbar(root, orient=tk.VERTICAL, command=tree.yview)
-tree.configure(yscroll=scrollbar.set)
+xscrollbar = ttk.Scrollbar(root, orient=tk.HORIZONTAL, command=tree.xview)
+tree.configure(yscrollcommand=scrollbar.set, xscrollcommand=xscrollbar.set)
 scrollbar.grid(row=0, column=1, sticky='ns')
+xscrollbar.grid(row=1, column=0, sticky='ns')
 
 # run the app
 root.mainloop()

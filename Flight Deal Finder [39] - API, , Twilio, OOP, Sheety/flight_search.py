@@ -17,6 +17,7 @@ kiwi_location_query_params = {
 
 message_list = []
 
+
 class FlightSearch:
     """This class is responsible for talking to the Flight Search API."""
 
