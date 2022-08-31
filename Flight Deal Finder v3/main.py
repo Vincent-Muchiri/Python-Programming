@@ -4,11 +4,18 @@ import tkinter.ttk as ttk
 from tkinter import messagebox
 import pandas
 from pprint import pprint
-from flight_searchV3 import FlightSearch
+from flight_search import FlightSearch
+from data_managerv3 import DataManagerV3
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from os import mkdir, path
+
+SHEET_NAME = "flightDealFinderV3"
 
 flight_search = FlightSearch()
+
+# TODO First time run
+data_manager = DataManagerV3(SHEET_NAME)
 
 
 def update_search_command():
@@ -23,15 +30,18 @@ def delete_search_command():
     """Delete searches saved in the treeview, CSV file and Excel sheet"""
     pass
 
+
 def results_command():
     """Shows a window with scrollable search results otherwise it shows an info messagebox"""
 
     def search_results_window():
         """Populates a window containing the search results if they are any"""
 
+
 def refresh_command():
     """Refresh the selected treeview """
     pass
+
 
 def search_flight_window():
     def search_flight_command():
@@ -39,16 +49,20 @@ def search_flight_window():
         flight_search_params = {}
 
         try:
-            flight_search_params["curr"] = currency_variable.get()
-            flight_search_params["price_to"] = int(ticket_price_entry.get())
+            # Create the dict later to conserve the order
+            currency = currency_variable.get()
+            ticket_budget = int(ticket_price_entry.get())
             departure_city_name = departure_entry.get()
             destination_city_name = destination_entry.get()
-            flight_search_params["date_from"] = search_date_from_entry.get()
-            flight_search_params["date_to"] = search_date_to_entry.get()
-            flight_search_params["max_stopovers"] = int(max_nights_spinbox.get())
-            flight_search_params["flight_type"] = flight_type_variable.get()
-            flight_search_params["nights_in_dst_from"] = int(max_nights_spinbox.get())
-            flight_search_params["nights_in_dst_to"] = int(min_nights_spinbox.get())
+            date_from = search_date_from_entry.get()
+            date_to = search_date_to_entry.get()
+            max_stopovers = int(max_nights_spinbox.get())
+            flight_type = flight_type_variable.get().lower()
+            max_nights = int(max_nights_spinbox.get())
+            min_nights = int(min_nights_spinbox.get())
+
+            departure_city_name = departure_entry.get()
+            destination_city_name = destination_entry.get()
 
         except ValueError:
             ticket_price_entry.state(["invalid"])
@@ -77,6 +91,14 @@ def search_flight_window():
                     if results[0] != results[1]:
                         flight_search_params["fly_from"] = results[0]
                         flight_search_params["fly_to"] = results[1]
+                        flight_search_params["date_from"] = date_from
+                        flight_search_params["date_to"] = date_to
+                        flight_search_params["price_to"] = ticket_budget
+                        flight_search_params["flight_type"] = flight_type
+                        flight_search_params["curr"] = currency
+                        flight_search_params["max_stopovers"] = max_stopovers
+                        flight_search_params["nights_in_dst_from"] = min_nights
+                        flight_search_params["nights_in_dst_to"] = max_nights
 
                         false_codes = False
 
@@ -88,22 +110,41 @@ def search_flight_window():
                                                            "Would you like to save it for later?")
                     if response:
                         # TODO Add the data to the treeview
-                        search_params_tuple = (
+                        flight_search_params_tuple = (
                             departure_city_name.title(),
                             destination_city_name.title(),
-                            flight_search_params["date_from"],
-                            flight_search_params["date_to"],
                             f"{flight_search_params['curr']} {flight_search_params['price_to']}",
                             flight_search_params["flight_type"].title(),
-                            len(search_results),
-                            flight_search_params['curr']
+                            flight_search_params["date_from"],
+                            flight_search_params["date_to"],
+                            0,
+                            0
                         )
-                        saved_searches_tree.insert("", tk.END, values=search_params_tuple)
+                        saved_searches_tree.insert("", tk.END, values=flight_search_params_tuple)
+
+                        # TODO Create the data folder
+                        if not path.exists("data"):
+                            mkdir("data")
+                        save_search_params = {}
+                        # TODO Save the data in a CSV file and Google sheet
+                        save_search_params["departureCity"] = flight_search_params["fly_from"]
+                        save_search_params["destinationCity"] = flight_search_params["fly_to"]
+                        save_search_params["budget"] = flight_search_params["price_to"]
+                        save_search_params["currency"] = flight_search_params["curr"]
+                        save_search_params["flightType"] = flight_search_params["flight_type"]
+                        save_search_params["maxStopovers"] = flight_search_params["max_stopovers"]
+                        save_search_params["minNightsInDestination"] = flight_search_params["nights_in_dst_from"]
+                        save_search_params["maxNightsInDestination"] = flight_search_params["nights_in_dst_to"]
+                        save_search_params["searchFrom"] = flight_search_params["date_from"]
+                        save_search_params["searchTo"] = flight_search_params["date_to"]
+
+                        data_manager.save_search(search_params=save_search_params)
 
                 else:
                     # TODO Populate the results in a popup window
-                    pass
 
+
+                    pass
 
     search_window = Toplevel()
     search_window.title("Search for a flight")
@@ -131,16 +172,16 @@ def search_flight_window():
 
     currency_label = ttk.Label(search_window, text="Choose currency: ")
     currency_label.grid(row=3, column=0, pady=20)
-    currency_options = ["USD", "AED", "AUD", "BTC", "BTN", "BWP", "CAD", "CNY", "EUR", "GBP", "JPY", "KES", "NZD",
+    currency_options = ["AED", "AUD", "BTC", "BTN", "BWP", "CAD", "CNY", "EUR", "USD", "GBP", "JPY", "KES", "NZD",
                         "SAR"]
     currency_variable = StringVar()
-    currency_variable.set(currency_options[0])  # default value
+    currency_variable.set(currency_options[8])  # default value
     currency_menu = ttk.OptionMenu(search_window, currency_variable, *currency_options)
     currency_menu.grid(row=3, column=1, padx=20, pady=20)
 
     flight_type_label = ttk.Label(search_window, text="Choose the flight type: ")
     flight_type_label.grid(row=4, column=0)
-    flight_type_options = ["round", "oneway"]
+    flight_type_options = ["Round", "Oneway"]
     flight_type_variable = StringVar()
     flight_type_variable.set(flight_type_options[0])  # default value
     flight_type_menu = ttk.OptionMenu(search_window, flight_type_variable, *flight_type_options)
@@ -186,7 +227,7 @@ def search_flight_window():
 # TODO Create the main window
 window = Tk()
 window.title("Flight Search and Notification App")
-window.geometry("600x470")
+window.geometry("670x470")
 # window.resizable(False, False)
 app_icon = PhotoImage(file="images/img_1.png")
 window.iconphoto(False, app_icon)
@@ -195,25 +236,27 @@ window.config(padx=20, pady=20)
 # TODO Set windows styling
 style = ttk.Style(window)
 window.tk.call('source',
-               'C:/Users/Vin Muchiri/OneDrive/Python Programming/_packages/Azure-ttk-theme-main/azure/azure.tcl')
+               'C:/Users/Vin Muchiri/OneDrive/_packages/Azure-ttk-theme-main/azure/azure.tcl')
 style.theme_use('azure')
 style.configure("Accentbutton", foreground="white")
 
 button_label_frame = ttk.LabelFrame(border=0)
 button_label_frame.pack()
 
-
 # -------------------------------------------- Search for Flights ------------------------------------------------------
 # TODO Create search button that opens up window
-search_btn = ttk.Button(button_label_frame, text="Search for flight", style="Accentbutton", command=search_flight_window)
+search_btn = ttk.Button(button_label_frame, text="Search for flight", style="Accentbutton",
+                        command=search_flight_window)
 search_btn.grid(row=0, column=0)
 
 # ------------------------------------------------- Delete Searches ----------------------------------------------------
-delete_btn = ttk.Button(button_label_frame, text="Delete Search History", style="Accentbutton", command=delete_search_command)
+delete_btn = ttk.Button(button_label_frame, text="Delete Search History", style="Accentbutton",
+                        command=delete_search_command)
 delete_btn.grid(row=0, column=1)
 
 # -------------------------------------------------- Update Searches ---------------------------------------------------
-update_btn = ttk.Button(button_label_frame, text="Update search parameters", style="Accentbutton", command=update_search_command)
+update_btn = ttk.Button(button_label_frame, text="Update search parameters", style="Accentbutton",
+                        command=update_search_command)
 update_btn.grid(row=0, column=2, padx=20)
 
 # --------------------------------------------------- View results -----------------------------------------------------
@@ -226,23 +269,30 @@ refresh_btn.grid(row=1, column=1, padx=20, pady=20)
 
 # -------------------------------------------------- View Tree ---------------------------------------------------------
 # TODO Create treeview that saves all the saved searches with their search parameter
-treeview_columns = ("departure_city", "destination_city", "date_from", "date_to", "ticket_budget",
-                    "flight_type", "results", "available_ticket")
+treeview_columns = ("departureCity", "destinationCity", "budget", "flightType", "searchFrom", "searchTo",
+                    "results", "available_ticket")
 
 saved_searches_tree = ttk.Treeview(columns=treeview_columns, show='headings')
 
-# define headings
-saved_searches_tree.heading('departure_city', text='Departure')
-saved_searches_tree.heading('destination_city', text='Destination')
-saved_searches_tree.heading('date_from', text='Date from')
-saved_searches_tree.heading("date_to", text="Date to")
-saved_searches_tree.heading('ticket_budget', text='Ticket budget')
-saved_searches_tree.heading('flight_type', text='Flight type')
+saved_searches_tree.column("departureCity", width=65, stretch=NO)
+saved_searches_tree.heading('departureCity', text='Departure')
+saved_searches_tree.column("destinationCity", width=70, stretch=NO)
+saved_searches_tree.heading('destinationCity', text='Destination')
+saved_searches_tree.column("budget", width=85, stretch=NO)
+saved_searches_tree.heading('budget', text='Ticket budget')
+saved_searches_tree.column("flightType", width=70, stretch=NO)
+saved_searches_tree.heading('flightType', text='Flight type')
+saved_searches_tree.column("searchFrom", width=80, stretch=NO)
+saved_searches_tree.heading('searchFrom', text='Date from')
+saved_searches_tree.column("searchTo", width=80, stretch=NO)
+saved_searches_tree.heading("searchTo", text="Date to")
+saved_searches_tree.column("results", width=70, stretch=NO)
 saved_searches_tree.heading('results', text='Results')
+saved_searches_tree.column("available_ticket", width=100, stretch=NO)
 saved_searches_tree.heading("available_ticket", text="Available ticket")
 
 # saved_searches_tree.grid(row=2, column=0, columnspan=4, sticky='nsew')
-saved_searches_tree.pack(pady=20)
+saved_searches_tree.pack(expand=YES, fill=BOTH, pady=20)
 
 # TODO Make view tree scrollable both horizontally and vertically
 # y_scrollbar = ttk.Scrollbar(orient=tk.VERTICAL, command=saved_searches_tree.yview)
@@ -254,5 +304,27 @@ x_scrollbar = ttk.Scrollbar(orient="horizontal", command=saved_searches_tree.xvi
 saved_searches_tree.configure(xscrollcommand=x_scrollbar.set)
 # x_scrollbar.grid(row=3, column=0, sticky="ew")
 x_scrollbar.pack()
+
+# TODO Add data to treeview if it exists
+if path.exists("data/saved searches.csv"):
+    file_dataframe = pandas.read_csv("data/saved searches.csv")
+    data_rows = file_dataframe.to_dict(orient="records")
+    # pprint(data_rows)
+
+    for row in data_rows:
+        # TODO Create a tuple
+        # saved_search_params_tuple = ()
+
+        saved_search_params_tuple = (
+            row["departureCity"].upper(),
+            row["destinationCity"].upper(),
+            f'{row["currency"]} {row["budget"]}',
+            row["flightType"].title(),
+            row["searchFrom"],
+            row["searchTo"],
+            0,
+            0
+        )
+        saved_searches_tree.insert('', tk.END, values=saved_search_params_tuple)
 
 window.mainloop()

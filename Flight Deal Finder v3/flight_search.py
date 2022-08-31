@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 # from data_managerV3 import sheety_header
 
-KIWI_API_KEY = "x9Bvxwr3yQ6FOp2TrQchuNgYnv6RO4fy"
+
 kiwi_api_header = {
     "apikey": KIWI_API_KEY
 }
