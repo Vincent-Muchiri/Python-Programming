@@ -1,7 +1,6 @@
 {
-	"folders": [
-		{
-			"path": "..\\Documents\\Python Programming"
-		}
-	]
+	"folders": [],
+	"settings": {
+		"editor.acceptSuggestionOnEnter": "on"
+	}
 }
