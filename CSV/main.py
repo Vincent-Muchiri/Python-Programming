@@ -76,24 +76,47 @@ for (index, value) in student_dataframe.items():
     pass
 
 # TODO Print the row of the dataframe
-for (index, row) in student_dataframe.iterrows():
-    print(row)
-    # Print the names only
-    print(row.student)
-    # TODO Print a specific value
-    if row.student == "Amy":
-        print(row.score)
+# for (index, row) in student_dataframe.iterrows():
+#     print(row)
+#     # Print the names only
+#     print(row.student)
+#     # TODO Print a specific value
+#     if row.student == "Amy":
+#         print(row.score)
 
 
-# # TODO Ways to orient a dataframe
-# # TODO Add data to CSV without overwriting the previous data
-# # Read the csv file if any
-# csv_file_data = pandas.read_csv("test.csv")
+# TODO Ways to orient a dataframe
+# Read the csv file if any
+# csv_file_data = pandas.read_csv("appended_data.csv")
 # print(csv_file_data)
-#
-# # Convert the dataframe to a dict
+# TODO Create the CSV file
+# example_dataframe = pandas.DataFrame(data_dict)
+# example_dataframe.to_csv("appended_data.csv")
+
+# Convert the dataframe to a dict
 # for orient in ["dict", "list", "series", "split", "records", "index"]:
 #     csv_data_dict = csv_file_data.to_dict(orient=orient)
 #     print(orient)
 #     print(csv_data_dict)
 #     print("")
+
+# TODO Add data to CSV without overwriting the previous data
+# example_dataframe = pandas.DataFrame(data_dict)
+# example_dataframe.to_csv("example.csv")
+# print("CSV file has been created and data saved.")
+# print(pandas.read_csv("example.csv"))
+
+data_dict_2 = {
+    "student": ["Vincent", "Diana"],
+    "score": [90, 92]
+}
+example_dataframe2 = pandas.DataFrame(data_dict_2)
+example_dataframe2.to_csv('example.csv', mode='a', index=False, header=False)
+print("Data has been appended")
+print(pandas.read_csv("example.csv"))
+
+
+
+
+
+
