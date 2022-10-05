@@ -1,14 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c36eb8b-45de-43b2-9ca3-cfa6ef8ea22d" name="Changes" comment="Migrating to VSCODE">
+    <list default="true" id="8c36eb8b-45de-43b2-9ca3-cfa6ef8ea22d" name="Changes" comment="1. Created &quot;split_into_days&quot; method to divide the data into two&#10;2. Created &quot;remove_non_recurring_matches&quot; method to remove matches offered by only one bookmaker&#10;3. Created &quot;grouped_cleaned_matches&quot; method to return a dictionary of list of the individual matches">
+      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/data/2022-09-29/cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/data/test data/cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beatiful Soup [45]/Top 100 Movies of All Time/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beatiful Soup [45]/data/y-comb-news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beatiful Soup [45]/live_website.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beatiful Soup [45]/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beatiful Soup [45]/website.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functions/Arguments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/CSS - Bacon Fansite/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/CSS - Bacon Fansite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/images/angela.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/images/chillies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/images/cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/images/computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/images/mountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/Cards/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/contact-me.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/index3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/HTML Resume/images/profile_pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/HTML Resume/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/images/angela.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/images/chillies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/images/cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/images/computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/images/mountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site v2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/My Site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/bet9ja.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/bet9ja.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/betika.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/betika.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/betkings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/betkings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/data/example2_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/data_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/foxbet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/foxbet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/odibet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/odibet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/palmerbet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/palmerbet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/sportpesa.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/sportpesa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/sportsbet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/sportsbet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/sportybet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/sportybet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/xbet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/xbet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Data Science.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data Science.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/workspace.code-workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight Club [40] - Email, API/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flight Club [40] - Email, API/data_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight Club [40] - Email, API/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flight Club [40] - Email, API/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight Deal Finder v3/flight_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flight Deal Finder v3/flight_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Write Faster Python/Fast API Calls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Asynchronous Python/Fast API Calls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Write Faster Python/example 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Asynchronous Python/example 1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Write Faster Python/runtime error fix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Asynchronous Python/runtime error fix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/HTML Personal Site/projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="repository" />
+    </option>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -16,8 +82,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
+        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -33,8 +100,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Web-Development" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Arb-Appv2/data_manager.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Arb-Appv2/test.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,34 +119,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Project.color": "2f1539",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Vin Muchiri/OneDrive/Python Programming/Flight Deal Finder v3",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Project.color&quot;: &quot;2f1539&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vin Muchiri/OneDrive/Arb-Appv2/data/test data&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\Flight Deal Finder v3" />
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\Flight Club [40] - Email, API\images" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Arb-Appv2\data\test data" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development\Cards" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development\HTML Resume" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development\HTML Personal Site" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development\HTML Personal Site" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development\HTML Personal Site\images" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\Asynchronous Python" />
       <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\Flight Deal Finder v3" />
       <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Intro To HTML.html">
-    <configuration name="Intro To HTML.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Python Programming/Intro To HTML.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="List comprehension vs Generator expression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main (2)">
+    <configuration name="live_website" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data Science" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,34 +164,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/List and Dictionary Comprehension" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Beatiful Soup [45]" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/List and Dictionary Comprehension/List comprehension vs Generator expression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data Science" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flight Deal Finder v3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flight Deal Finder v3/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Beatiful Soup [45]/live_website.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,12 +186,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flight Club [40] - Email, API" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Beatiful Soup [45]/Top 100 Movies of All Time" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flight Club [40] - Email, API/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Beatiful Soup [45]/Top 100 Movies of All Time/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,19 +201,19 @@
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data Science" />
+      <module name="Arb-Appv2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Arb-Appv2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Vin Muchiri\OneDrive\Python Programming\Flight Deal Finder v3\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Arb-Appv2/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,6 +223,28 @@
       <method v="2" />
     </configuration>
     <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Arb-Appv2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Arb-Appv2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Arb-Appv2/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data Science" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,12 +252,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flight Deal Finder v3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flight Deal Finder v3/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Intro To HTML.html" />
         <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.List comprehension vs Generator expression" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.live_website" />
       </list>
     </recent_temporary>
   </component>
@@ -218,6 +300,43 @@
       <workItem from="1662083493277" duration="6065000" />
       <workItem from="1662108230401" duration="3236000" />
       <workItem from="1662450131798" duration="3210000" />
+      <workItem from="1662464708238" duration="606000" />
+      <workItem from="1662517362168" duration="6915000" />
+      <workItem from="1662564513708" duration="1055000" />
+      <workItem from="1662622262841" duration="22430000" />
+      <workItem from="1662799434125" duration="6558000" />
+      <workItem from="1662821893606" duration="5239000" />
+      <workItem from="1662894426439" duration="6065000" />
+      <workItem from="1662924634132" duration="594000" />
+      <workItem from="1662964983238" duration="817000" />
+      <workItem from="1662975930131" duration="3678000" />
+      <workItem from="1663043389108" duration="11180000" />
+      <workItem from="1663166284181" duration="22019000" />
+      <workItem from="1663226941808" duration="27281000" />
+      <workItem from="1663322151403" duration="1382000" />
+      <workItem from="1663330377867" duration="1787000" />
+      <workItem from="1663336224590" duration="9109000" />
+      <workItem from="1663408518502" duration="6127000" />
+      <workItem from="1663524118396" duration="39000" />
+      <workItem from="1663524638899" duration="87000" />
+      <workItem from="1663584892010" duration="38968000" />
+      <workItem from="1663755193994" duration="450000" />
+      <workItem from="1663757785982" duration="2034000" />
+      <workItem from="1663817397159" duration="417000" />
+      <workItem from="1663820354549" duration="20212000" />
+      <workItem from="1663938173710" duration="3122000" />
+      <workItem from="1664011030742" duration="10837000" />
+      <workItem from="1664307399986" duration="4632000" />
+      <workItem from="1664338656353" duration="3507000" />
+      <workItem from="1664351167588" duration="17872000" />
+      <workItem from="1664414031540" duration="17897000" />
+      <workItem from="1664478348950" duration="3303000" />
+      <workItem from="1664615847026" duration="12257000" />
+      <workItem from="1664756708750" duration="8181000" />
+      <workItem from="1664786551583" duration="9061000" />
+      <workItem from="1664813263819" duration="15027000" />
+      <workItem from="1664878652655" duration="3562000" />
+      <workItem from="1664938640970" duration="7551000" />
     </task>
     <task id="LOCAL-00001" summary="Commited on Sunday 21/08/2022">
       <created>1661073312987</created>
@@ -261,7 +380,112 @@
       <option name="project" value="LOCAL" />
       <updated>1662450266733</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Converting to OOP">
+      <created>1662825453284</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662825453285</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created a method called create_cleaned_soccer_dict in the DataManager class that returns an organized dictionary of cleaned data">
+      <created>1662900865489</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662900865489</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Retrieving away_odds yields IndexError. Exception caught">
+      <created>1663182296348</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663182296348</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Retrieving odds yields IndexError/TypeError. Exception caught">
+      <created>1663184792850</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663184792850</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Removed the &quot;bookmaker&quot; class attribute from the DataManager class">
+      <created>1663228364410</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663228364410</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Run multiple functions using asyncio.gather()">
+      <created>1663228478024</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663228478024</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Run multiple functions by adding them to individual future lists and concatinating them together to a single list">
+      <created>1663228577499</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663228577499</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changed the format of the API ENDPOINT">
+      <created>1663228870592</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663228870592</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Day 41 complete. Learned about HTML, &lt;h1&gt;, &lt;p&gt;, &lt;a&gt;,">
+      <created>1663233803120</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663233803120</updated>
+    </task>
+    <task id="LOCAL-00016" summary="html.unescape() added to team names">
+      <created>1663267120850</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663267120850</updated>
+    </task>
+    <task id="LOCAL-00017" summary="html.unescape() added to team names">
+      <created>1663267133045</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663267133045</updated>
+    </task>
+    <task id="LOCAL-00018" summary="1. Added self.current_date to the method &quot;create_cleaned_soccer_dict&quot;&#10;2. Converted the date object in DataManager class to a string&#10;3. Added &quot;sorted_list_dicts&quot; to DataManager class&#10;4. Fixed the null return values of betika and xbet tomorrow_matches methods">
+      <created>1663331308850</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663331308850</updated>
+    </task>
+    <task id="LOCAL-00019" summary="1. Added self.current_date to the method &quot;create_cleaned_soccer_dict&quot;&#10;2. Converted the date object in DataManager class to a string&#10;3. Added &quot;sorted_list_dicts&quot; to DataManager class&#10;4. Fixed the null return values of betika and xbet tomorrow_matches methods">
+      <created>1663331689759</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663331689759</updated>
+    </task>
+    <task id="LOCAL-00020" summary="1. Restructured the cleaned dictionary&#10;2. Converted the date object to a string">
+      <created>1663344483793</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663344483793</updated>
+    </task>
+    <task id="LOCAL-00021" summary="1. Created &quot;split_into_days&quot; method to divide the data into two&#10;2. Created &quot;remove_non_recurring_matches&quot; method to remove matches offered by only one bookmaker&#10;3. Created &quot;grouped_cleaned_matches&quot; method to return a dictionary of list of the individual matches">
+      <created>1663683529125</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663683529125</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +496,39 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -285,18 +541,41 @@
     <MESSAGE value="Fix DataFrame column duplication and reorder issue" />
     <MESSAGE value="Finish lesson later" />
     <MESSAGE value="Migrating to VSCODE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrating to VSCODE" />
+    <MESSAGE value="Converting to OOP" />
+    <MESSAGE value="Created a method called create_cleaned_soccer_dict in the DataManager class that returns an organized dictionary of cleaned data" />
+    <MESSAGE value="Retrieving away_odds yields IndexError. Exception caught" />
+    <MESSAGE value="Retrieving odds yields IndexError/TypeError. Exception caught" />
+    <MESSAGE value="Removed the &quot;bookmaker&quot; class attribute from the DataManager class" />
+    <MESSAGE value="Run multiple functions using asyncio.gather()" />
+    <MESSAGE value="Run multiple functions by adding them to individual future lists and concatinating them together to a single list" />
+    <MESSAGE value="Changed the format of the API ENDPOINT" />
+    <MESSAGE value="Day 41 complete. Learned about HTML, &lt;h1&gt;, &lt;p&gt;, &lt;a&gt;," />
+    <MESSAGE value="html.unescape() added to team names" />
+    <MESSAGE value="1. Added self.current_date to the method &quot;create_cleaned_soccer_dict&quot;&#10;2. Converted the date object in DataManager class to a string&#10;3. Added &quot;sorted_list_dicts&quot; to DataManager class&#10;4. Fixed the null return values of betika and xbet tomorrow_matches methods" />
+    <MESSAGE value="1. Restructured the cleaned dictionary&#10;2. Converted the date object to a string" />
+    <MESSAGE value="1. Created &quot;split_into_days&quot; method to divide the data into two&#10;2. Created &quot;remove_non_recurring_matches&quot; method to remove matches offered by only one bookmaker&#10;3. Created &quot;grouped_cleaned_matches&quot; method to return a dictionary of list of the individual matches" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Created &quot;split_into_days&quot; method to divide the data into two&#10;2. Created &quot;remove_non_recurring_matches&quot; method to remove matches offered by only one bookmaker&#10;3. Created &quot;grouped_cleaned_matches&quot; method to return a dictionary of list of the individual matches" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_Programming$List_comprehension_vs_Generator_expression.coverage" NAME="List comprehension vs Generator expression Coverage Results" MODIFIED="1661930862863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/List and Dictionary Comprehension" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1661937610815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder v3" />
     <SUITE FILE_PATH="coverage/Python_Programming$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1661853578989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Club [40] - Email, API" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mainV3.coverage" NAME="mainV3 Coverage Results" MODIFIED="1661864443665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1661957716334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Club [40] - Email, API" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test.coverage" NAME="test Coverage Results" MODIFIED="1661780317901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
-    <SUITE FILE_PATH="coverage/Python_Programming$widgets_examples.coverage" NAME="widgets examples Coverage Results" MODIFIED="1660809157341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Arguments.coverage" NAME="Arguments Coverage Results" MODIFIED="1663941162412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test.coverage" NAME="test Coverage Results" MODIFIED="1664945916433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1662518439579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App" />
     <SUITE FILE_PATH="coverage/Python_Programming$Treeview.coverage" NAME="Treeview Coverage Results" MODIFIED="1660891369217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1661933820550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder v3" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main.coverage" NAME="main Coverage Results" MODIFIED="1661865141729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+    <SUITE FILE_PATH="coverage/Python_Programming$sportybet.coverage" NAME="sportybet Coverage Results" MODIFIED="1662800696949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
+    <SUITE FILE_PATH="coverage/Python_Programming$threading_tests.coverage" NAME="threading_tests Coverage Results" MODIFIED="1663171269379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
+    <SUITE FILE_PATH="coverage/Python_Programming$live_website.coverage" NAME="live_website Coverage Results" MODIFIED="1664786989083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Beatiful Soup [45]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main.coverage" NAME="main Coverage Results" MODIFIED="1664792204865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
+    <SUITE FILE_PATH="coverage/Python_Programming$foxbet_today_soccer_matches.coverage" NAME="foxbet today soccer matches Coverage Results" MODIFIED="1662521577262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/foxbet/soccer" />
+    <SUITE FILE_PATH="coverage/Python_Programming$sportyBet_today_soccer_matches.coverage" NAME="sportyBet today soccer matches Coverage Results" MODIFIED="1662521621788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/sportyBet/soccer" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1664624322007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Beatiful Soup [45]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mainV3.coverage" NAME="mainV3 Coverage Results" MODIFIED="1661864443665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1664946113883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Beatiful Soup [45]/Top 100 Movies of All Time" />
+    <SUITE FILE_PATH="coverage/Python_Programming$widgets_examples.coverage" NAME="widgets examples Coverage Results" MODIFIED="1660809157341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Sync_vs_Async_Programming.coverage" NAME="Sync vs Async Programming Coverage Results" MODIFIED="1663045863946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Dictionary.coverage" NAME="Dictionary Coverage Results" MODIFIED="1663595258057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mainV2.coverage" NAME="mainV2 Coverage Results" MODIFIED="1662519179379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1664880648181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
   </component>
 </project>

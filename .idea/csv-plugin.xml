@@ -17,6 +17,41 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\GUI\Flash Cards App\data\1000 Frequent Xhosa Words.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GUI\Flash Cards App\data\1000 Frequent Zulu Words - Copy.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GUI\Flash Cards App\data\1000 Frequent Zulu Words.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GUI\Flash Cards App\data\Edited File.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\GUI\Flash Cards App\data\Words To Learn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
