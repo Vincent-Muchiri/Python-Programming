@@ -189,9 +189,10 @@ user_id = sp.current_user()["id"]
 # TODO Create spotify playlist. Run this only once
 playlist_feedback = sp.user_playlist_create(
     user=user_id,
-    name=f"{release_date_string} Billboard 100",
+    name=f"{release_date_string} Billboard Top 100",
     public=True,  # Make the playlist public or not
-    description="This playlist was created automatically using python, Spotify api and spotipy library. To see the code go to ")
+    description="This playlist was created using python, Spotify api and spotipy library. To see the code go to\n"
+                "https://github.com/Vincent-Muchiri/Python-Programming/tree/master/Billboards%20Top%20100%20Spotify%20Playlist%20Maker%20%5B46%5D%20-%20Beautifulsoup%2C%20Spotify%20API")
 
 playlist_id = playlist_feedback['id']
 # print(playlist_id)
