@@ -80,10 +80,17 @@ from spotipy.oauth2 import SpotifyOAuth, SpotifyClientCredentials
 # TODO Create a spotify account and log in to the developer section on https://developer.spotify.com/dashboard/
 # spotify_client_id = "Get your client id after creating the developer account"
 # spotify_client_secret = "Get your client id after creating the developer account"
-spotify_client_id = "b5025c8690214771b0add8d0d5f0c1ee"
-spotify_client_secret = "c2cccc65b1234d0c809efe8cdfacec14"
+spotify_client_id = ""
+spotify_client_secret = ""
 spotify_redirect_uri = "http://example.com"  # Other reserved urls can be used e.g. local host
-# {"access_token": "BQDMJOGNVLEnA0kutea1P6vY2EC5nk7JOuVEo4LVSzvnd5-mDR0LkywLCGmaMThTeGBKTOBBYR5tJPw5NrcyGB8ZWbVWMqWQV1pW58oKsAt6nQlF-ROxzzXPEHvZCTDHKBcUxxS1dGc7hehPOEsyuWu01IvfPKsyU5S6c7An1URb0faVyesRjrp9rbXTnmFwA9EbaqjmioUeNy_kXtCxDhEQosxsM_QnFA", "token_type": "Bearer", "expires_in": 3600, "refresh_token": "AQAW3z1JNZ_-6k1wfqs4BGfJi4ZtzDxt_2AKk89gszoEpN2N6jObgfZPRbCXuYJX9RnvC1reE39TrjopRzhecUYbRnUygziPpJKuxfBqMR3TaCJPlPJ8DMciyRK3ZOoKzo4", "scope": "playlist-modify-private", "expires_at": 1665223435}
+# {
+#     "access_token": "",
+#      "token_type": "Bearer",
+#      "expires_in": 3600,
+#      "refresh_token": "",
+#      "scope": "playlist-modify-private",
+#      "expires_at": 1665223435
+#  }
 
 # Scopes
 # user-read-currently-playing
