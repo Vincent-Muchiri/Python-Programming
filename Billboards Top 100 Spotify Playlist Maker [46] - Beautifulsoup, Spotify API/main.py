@@ -27,19 +27,20 @@ while wrong_entry:
             wrong_entry = False
 
 # TODO Make a request to Billboard and get the HTML text
-url = f"https://www.billboard.com/charts/hot-100/{release_date_string}/"
-response = requests.get(url)
-billboard_html_text = response.text
+# url = f"https://www.billboard.com/charts/hot-100/{release_date_string}/"
+# response = requests.get(url)
+# billboard_html_text = response.text
 
 # TODO Offline testing
-# with open("data/index.html", mode="r", encoding="utf8") as html_file:
-#     billboard_html_text = html_file.read()
+with open("data/1999-08-21.html", mode="r", encoding="utf8") as html_file:
+    billboard_html_text = html_file.read()
 
 # TODO Create the beautifulsoup class
 billboard_soup = BeautifulSoup(billboard_html_text, "html.parser")
 # print(billboard_soup.title)
 
 # TODO Get the song titles
+print("Scraping song titles from Billboard.com...")
 # selected = billboard_soup.select(selector="li h3")
 selected = billboard_soup.find_all(name="h3", class_="a-no-trucate")
 music_titles = []
@@ -51,22 +52,24 @@ for selection in selected:
 # print(music_titles)
 
 # TODO Get the artist names
-selections = billboard_soup.find_all(name="span", class_="c-label")
+print("Scraping artist names from Billboard.com...")
+selections = billboard_soup.find_all(name="span", class_="a-font-primary-s")
 artist_names = []
 for selection in selections:
     text = selection.getText()
     text = text.strip("\n\t")
-    try:
-        int(text)
-    except ValueError:
-        if text == "NEW" or text == "RE-\nENTRY" or text == "-":
-            pass
-        else:
-            artist_name = text
-            # print(artist_name)
-            artist_names.append(artist_name)
+
+    if text == "NEW" or text == "RE-\nENTRY" or text == "-" or text == "RIAA Certification:":
+        pass
+    else:
+        artist_name = text
+        # print(artist_name)
+        artist_names.append(artist_name)
 
 # TODO Test Data
+# print(len(music_titles), len(artist_names))
+# print(music_titles)
+# print(artist_names)
 # music_titles = ['Honey', 'Mo Money Mo Problems', 'Quit Playing Games (With My Heart)', 'How Do I Live', '2 Become 1', 'You Make Me Wanna...', "I'll Be Missing You", 'Semi-Charmed Life', 'Barbie Girl', 'Never Make A Promise', 'All For You', 'Foolish Games/You Were Meant For Me', 'Not Tonight', 'Up Jumps Da Boogie', 'Invisible Man', 'Do You Know (What It Takes)', 'Sunny Came Home', 'Building A Mystery', 'Bitch', 'All Cried Out', 'Coco Jamboo', 'C U When U Get There (From "Nothing To Lose")', 'Return Of The Mack', 'Someone', 'I Miss My Homies', 'The Freshmen', 'What About Us', "You Should Be Mine (Don't Waste Your Time)", 'Barely Breathing', 'G.H.E.T.T.O.U.T.', 'Gotham City', 'For You I Will (From "Space Jam")', "Say You'll Be There", 'Do You Like This', 'All I Want (From "GOOD Burger")', "Hard To Say I'm Sorry", 'ESPN Presents The Jock Jam', 'More Than This', 'My Love Is The Shhh!', 'MMMBop', 'Backyard Boogie', 'I Say A Little Prayer', 'I Want You', "It's Your Love", "I Care 'Bout You", 'Take It To The Streets', 'I Can Love You', '6 Underground', 'To The Moon And Back', 'Look Into My Eyes (From "Batman & Robin")', 'After 12, Before 6', 'When I Die', 'Go The Distance (From "Hercules")', 'Big Bad Mamma (From "Def Jam\'s How To Be A Player")', 'You Light Up My Life', "Things Just Ain't The Same", 'I Wanna Be There', 'To Make You Feel My Love', 'Hole In My Soul', 'Butta Love', 'As We Lay', 'No Tengo Dinero', 'Smile', 'Have A Little Mercy', 'Whatever', 'Around The World', 'Alone', 'Fix', 'Down For Yours', 'Need Your Love', "Don't Say", 'You Bring Me Up', "Can't Let Go", 'Piece Of My Heart', 'Jack-Ass', "It's Alright", 'Rhythm Of Love', 'Never, Never Gonna Give You Up', 'Tubthumping', 'When You Talk About Love', 'Supernatural', 'Happy With You', 'Four Leaf Clover', 'Can U Feel It', 'Butterfly Kisses', 'Legend Of A Cowgirl', "Smokin' Me Out", 'We Can Get Down', 'Can We (From "Booty Call")', "It's No Good", 'Men Of Steel (From "Steel")', "I'm Not A Fool", "Can't Get You Out Of My Mind", 'Drink, Swear, Steal & Lie', 'Relax & Party', 'In A Dream', 'Thinking Of You', "What's Stopping You", 'Free', 'Don\'t Wanna Be A Player (From "Booty Call")']
 # artist_names = ['Mariah Carey', 'The Notorious B.I.G. Featuring Puff Daddy & Mase', 'Backstreet Boys', 'LeAnn Rimes', 'Spice Girls', 'Usher', 'Puff Daddy & Faith Evans Featuring 112', 'Third Eye Blind', 'Aqua', 'Dru Hill', 'Sister Hazel', 'Jewel', "Lil' Kim Feat. Da Brat, Left Eye, Missy Elliott & Angie Mar", 'Magoo And Timbaland', '98 Degrees', 'Robyn', 'Shawn Colvin', 'Sarah McLachlan', 'Meredith Brooks', 'Allure Featuring 112', 'Mr. President', 'Coolio Featuring 40 Thevz', 'Mark Morrison', 'SWV (Featuring Puff Daddy)', 'Master P Featuring Pimp C And The Shocker', 'The Verve Pipe', 'Total', 'Brian McKnight Featuring Mase', 'Duncan Sheik', 'Changing Faces', 'R. Kelly', 'Monica', 'Spice Girls', 'Rome', 'Az Yet Featuring Peter Cetera', 'Various Artists', '10,000 Maniacs', "Somethin' For The People Featuring Trina & Tamara", 'Hanson', 'Mack 10', 'Diana King', 'Savage Garden', 'Tim McGraw With Faith Hill', 'Milestone', 'Rampage Featuring Billy Lawrence', 'Mary J. Blige', 'Sneaker Pimps', 'Savage Garden', 'Bone Thugs-N-Harmony', 'Sam Salter', 'No Mercy', 'Michael Bolton', 'Foxy Brown Featuring Dru Hill', 'LeAnn Rimes', 'Deborah Cox', 'Blessid Union Of Souls', 'Billy Joel', 'Aerosmith', 'Next', 'Dana', 'Los Umbrellos', 'Scarface Featuring 2Pac & Johnny P', '4.0', 'En Vogue', 'Daft Punk', 'Bee Gees', "BLACKstreet With Special Guests Ol' Dirty Bastard & Slash", 'Nastyboy Klick Featuring Roger Troutman', 'Big Bub Featuring Queen Latifah & Heavy D', 'Jon B', 'K-Ci & JoJo', 'Laurnea', 'Shaggy (Featuring Marsha)', 'Beck', 'Queen Latifah', 'DJ Company', 'Lisa Stansfield', 'Chumbawamba', 'Patti LaBelle', 'Wild Orchid', 'Samantha Cole', 'Abra Moore', '3rd Party', 'Raybon Bros.', 'Imani Coppola', 'Warren G Featuring Ronald Isley', 'Myron', 'SWV', 'Depeche Mode', "Shaquille O'Neal, Ice Cube, B Real, Peter Gunz & KRS-One", 'Immature', 'Lil Suzy', 'Michael Peterson', 'Ivory', 'Rockell', 'Tony Toni Tone', "The O'Jays", 'Ultra Nate', 'Joe']
 
@@ -75,9 +78,12 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth, SpotifyClientCredentials
 
 # TODO Create a spotify account and log in to the developer section on https://developer.spotify.com/dashboard/
-spotify_client_id = "Get your client id after creating the developer account"
-spotify_client_secret = "Get your client id after creating the developer account"
+# spotify_client_id = "Get your client id after creating the developer account"
+# spotify_client_secret = "Get your client id after creating the developer account"
+spotify_client_id = "b5025c8690214771b0add8d0d5f0c1ee"
+spotify_client_secret = "c2cccc65b1234d0c809efe8cdfacec14"
 spotify_redirect_uri = "http://example.com"  # Other reserved urls can be used e.g. local host
+# {"access_token": "BQDMJOGNVLEnA0kutea1P6vY2EC5nk7JOuVEo4LVSzvnd5-mDR0LkywLCGmaMThTeGBKTOBBYR5tJPw5NrcyGB8ZWbVWMqWQV1pW58oKsAt6nQlF-ROxzzXPEHvZCTDHKBcUxxS1dGc7hehPOEsyuWu01IvfPKsyU5S6c7An1URb0faVyesRjrp9rbXTnmFwA9EbaqjmioUeNy_kXtCxDhEQosxsM_QnFA", "token_type": "Bearer", "expires_in": 3600, "refresh_token": "AQAW3z1JNZ_-6k1wfqs4BGfJi4ZtzDxt_2AKk89gszoEpN2N6jObgfZPRbCXuYJX9RnvC1reE39TrjopRzhecUYbRnUygziPpJKuxfBqMR3TaCJPlPJ8DMciyRK3ZOoKzo4", "scope": "playlist-modify-private", "expires_at": 1665223435}
 
 # Scopes
 # user-read-currently-playing
@@ -89,14 +95,24 @@ spotify_redirect_uri = "http://example.com"  # Other reserved urls can be used e
 # playlist-modify-private
 # user-library-read
 
-# TODO Authenticate  and save the token file locally. Mine is saved inside the 'data' folder
-scope = "playlist-modify-private"  # Used to give write access to a user's private playlist
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=spotify_client_id,
-                                               client_secret=spotify_client_secret,
-                                               redirect_uri=spotify_redirect_uri,
-                                               scope="playlist-modify-private",
-                                               show_dialog=True,
-                                               cache_path="data/token.txt"))
+authentication_ongoing = True
+while authentication_ongoing:
+    # TODO Authenticate  and save the token file locally. Mine is saved inside the 'data' folder
+    print("Authenticating Spotify request...")
+    scope = "playlist-modify-private"  # Used to give write access to a user's private playlist
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=spotify_client_id,
+                                                   client_secret=spotify_client_secret,
+                                                   redirect_uri=spotify_redirect_uri,
+                                                   scope="playlist-modify-private",
+                                                   show_dialog=True,
+                                                   cache_path="data/token.txt"))
+
+    # TODO Get the user id
+    user_id = sp.current_user()["id"]
+    if user_id != "":
+        authentication_ongoing = False
+        print(f"{user_id}")
+        print("User ID retrieved")
 
 # TODO Get the track URI
 release_year = release_date_string.split("-")[0]
@@ -113,11 +129,12 @@ def spotipy_request(track_name, release_year):
 
 
 # TODO Loop through the music titles list created after scraping the Billboard page and pass each of them and the release year as params
+print("Searching for song titles on Spotify...")
 search_results = []
 for track_name in music_titles:
     try:
         response = spotipy_request(track_name, release_year)
-        print(response)
+        # print(response)
     except IndexError:
         pass
     else:
@@ -132,13 +149,14 @@ for track_name in music_titles:
 #     print(result)
 
 # TODO Save the data locally for offline testing and verification
-with open(f"data/{release_date_string} spotify playlist.json", mode="w") as playlist_file:
-    json.dump(search_results, playlist_file, indent=4)
+# with open(f"data/{release_date_string} spotify playlist.json", mode="w") as spotify_search_results_file:
+#     json.dump(search_results, spotify_search_results_file, indent=4)
 
 # TODO For offline testing
-# with open("data/1997-09-11 spotify playlist.json", mode="r") as spotify_charts_json_file:
-#     search_results = json.load(spotify_charts_json_file)
+with open(f"data/{release_date_string} spotify playlist.json", mode="r") as spotify_charts_json_file:
+    search_results = json.load(spotify_charts_json_file)
 
+print("Confirming correct song and artist pair and obtaining the track uri...")
 playlist = []
 uri_list = []
 for result in search_results:
@@ -179,20 +197,29 @@ for result in search_results:
                         track_dict["Track Name"] = track_name
                         track_dict["URI"] = track_uri
 
+                        # print(track_dict)
+
                         # TODO Append the unique dict in the list
                         playlist.append(track_dict)
 
-# TODO Get the user id
-user_id = sp.current_user()["id"]
-# print(user_id)
+print(len(playlist), print(len(uri_list)))
+
+# TODO Save the playlist offline
+with open(f"data/{release_date_string} Billboard Top 100 playlist.json", mode="w") as playlist_file:
+    json.dump(playlist, playlist_file, indent=4)
+
 
 # TODO Create spotify playlist. Run this only once
+print("Making the playlist")
 playlist_feedback = sp.user_playlist_create(
     user=user_id,
-    name=f"{release_date_string} Billboard Top 100",
+    # name=f"{release_date_string} Billboard Top 100",
+    name="Dituna, Welcome To The World",
     public=True,  # Make the playlist public or not
-    description="This playlist was created using python, Spotify api and spotipy library. To see the code, go to the link "
-                "https://github.com/Vincent-Muchiri/Python-Programming and under the Python-Programming repository look for a folder named 'Billboards Top 100 Spotify Playlist Maker'")
+    description=f"{release_date_string} Billboard Top 100"
+    # description="This playlist was created using python, Spotify api and spotipy library. To see the code, go to the link "
+    #             "https://github.com/Vincent-Muchiri/Python-Programming and under the Python-Programming repository look for a folder named 'Billboards Top 100 Spotify Playlist Maker'"
+            )
 
 playlist_id = playlist_feedback['id']
 # print(playlist_id)
@@ -201,6 +228,7 @@ playlist_id = playlist_feedback['id']
 # print(uri_list)
 
 # TODO Upload songs to playlist
+print("Adding the songs to the playlist")
 playlist_snapshot = sp.playlist_add_items(
     playlist_id=playlist_id,
     items=uri_list,

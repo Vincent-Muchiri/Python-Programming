@@ -3,11 +3,11 @@ from os import path, mkdir, environ
 import pandas
 from tkinter import messagebox
 
-# SHEETY_BEARER_TOKEN = environ["SHEETY_BEARER_TOKEN"]
+SHEETY_BEARER_TOKEN = environ["SHEETY_BEARER_TOKEN"]
 
 
 sheety_header = {
-    # 'Authorization': f"Bearer {SHEETY_BEARER_TOKEN}"
+    'Authorization': f"Bearer {SHEETY_BEARER_TOKEN}",
     "Content-type": "application/json"
 }
 

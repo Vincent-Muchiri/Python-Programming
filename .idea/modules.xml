@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Arb-App/.idea/Arb-App.iml" filepath="$PROJECT_DIR$/../Arb-App/.idea/Arb-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Arb-Appv2/.idea/Arb-Appv2.iml" filepath="$PROJECT_DIR$/../Arb-Appv2/.idea/Arb-Appv2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Data Science.iml" filepath="$PROJECT_DIR$/.idea/Data Science.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Social-Media-Marketplace/.idea/Social-Media-Marketplace.iml" filepath="$PROJECT_DIR$/../Social-Media-Marketplace/.idea/Social-Media-Marketplace.iml" />

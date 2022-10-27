@@ -10,7 +10,10 @@ programming_dictionary = {"Bug": "An unexpected problem with software or hardwar
 first_key = list(programming_dictionary.keys())[0]
 first_value = list(programming_dictionary.values())[0]
 first_key_value_tuple = list(programming_dictionary.items())[0]
-
+# print(programming_dictionary.keys())
+if "Bug" in programming_dictionary.keys():
+    print("It is")
+    pass
 # print(first_key, first_value)
 # print(first_key_value_tuple)
 
@@ -59,12 +62,12 @@ dict_list = [{'Class': "Form 1 East",
 from operator import itemgetter
 
 sort_by_class = sorted(dict_list, key=itemgetter('Class'))
-print(sort_by_class)
+# print(sort_by_class)
 
 # TODO Sort a list based on two parameters
 sort_by_class_marks = sorted(dict_list, key=lambda student_dict: (student_dict['Class'], student_dict['Marks']))
-print(sort_by_class_marks)
+# print(sort_by_class_marks)
 
 # TODO Sort in descending order
 sort_by_class_marks = sorted(dict_list, key=lambda student_dict: (student_dict['Class'], student_dict['Marks']), reverse=True)
-print(sort_by_class_marks)
+# print(sort_by_class_marks)

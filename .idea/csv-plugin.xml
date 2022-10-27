@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\CSV\new_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Flight Deal Finder [39] - API, , Twilio, OOP, Sheety\data\saved searches.csv">
           <value>
             <Attribute>
@@ -46,6 +53,20 @@
           </value>
         </entry>
         <entry key="\GUI\Flash Cards App\data\Words To Learn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Selenium [48]\data\events.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Selenium [48]\data\wikipidea_stats.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

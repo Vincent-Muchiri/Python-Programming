@@ -6,7 +6,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Arb-App" />
     <orderEntry type="module" module-name="Social-Media-Marketplace" />
     <orderEntry type="module" module-name="Web-Development" />
     <orderEntry type="module" module-name="Arb-Appv2" />
