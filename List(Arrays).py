@@ -33,3 +33,6 @@ print(f"The total is {total}")
 new_list = [1, 2, 3]
 new_list.insert(0, 0)
 print(new_list)
+
+for index in range(0,len(kenyan_counties), 2):
+    print(index)
