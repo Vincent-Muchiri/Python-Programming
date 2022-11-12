@@ -21,7 +21,6 @@ product_name = chrome_driver.find_element(By.ID, "productTitle")
 # chrome_driver.find_element(By.CSS_SELECTOR, "")
 # chrome_driver.find_element(By.XPATH, "")
 
-# TODO Selectin
 
 
 
