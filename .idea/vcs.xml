@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/../Arb-Appv2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Social-Media-Marketplace" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Web-Development" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../the-early-bird" vcs="Git" />
   </component>
 </project>
