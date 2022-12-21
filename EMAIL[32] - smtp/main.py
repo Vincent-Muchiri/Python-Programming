@@ -9,10 +9,10 @@ import smtplib
 # Outlook = smtp-mail.outlook.com, 587
 
 my_email = "appdevemail.test@gmail.com"
-password = "luopwtibvkbjwhvq"
+password = "hthxjiusuwxxvszy"
 #
 # # TODO Create connection
-with smtplib.SMTP("smtp.gmail.com", 465) as connection:
+with smtplib.SMTP("smtp.gmail.com") as connection:
     print("Encrypting ...")
     # TODO Encrypt connection
     connection.starttls()
