@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
+from selenium.webdriver.chrome.options import Options
 from time import time, sleep
 from concurrent.futures import as_completed, ThreadPoolExecutor
 
@@ -15,8 +15,14 @@ class InternetSpeedTwitterBot:
         self.promised_up = 10
         self.promised_down = 150
 
+        # TODO Set options
+        chrome_options = Options()
+
+        # TODO Make the bot run headless i.e. without opening the browser
+        chrome_options.headless = True
+
         # TODO Initialize the Chrome driver
-        self.chrome_driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH)
+        self.chrome_driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH, options=chrome_options)
 
     def get_internet_speed(self):
         """
@@ -24,6 +30,7 @@ class InternetSpeedTwitterBot:
         :return: dict
         """
         fast_url = "https://fast.com/"
+        print("Fetching internet speeds from fast.com...")
 
         # TODO Get the initial website page
         self.chrome_driver.get(fast_url)
@@ -48,7 +55,7 @@ class InternetSpeedTwitterBot:
         upload_units = self.chrome_driver.find_element(By.ID, 'upload-units').text
 
         # print(upload_speed, upload_units)
-        print(f"The upload speed is {upload_speed} {upload_units} and the download speed is {download_speed} {download_units}")
+        print(f"Your upload speed is {upload_speed} {upload_units} and the download speed is {download_speed} {download_units}")
 
         # TODO Create a dict with the internet details
         internet_speed_details = {
