@@ -65,7 +65,34 @@ class InternetSpeedTwitterBot:
             'download_units': download_units
         }
 
+        # print("Done")
+
         # TODO Return the a dict
         return internet_speed_details
     def tweet_at_provider(self):
         pass
+
+    def test_code(self):
+        from concurrent.futures import ThreadPoolExecutor
+
+        URL = "https://pypi.python.org/pypi/{}"
+
+        li = ["pywp/1.3", "augploy/0.3.5"]
+
+        def get_content(url):
+            print("This is a future")
+            self.chrome_driver.get(url)
+            tag = self.chrome_driver.find_element(By.TAG_NAME, "a")
+            # do your work here and return the result
+            return tag.get_attribute("href")
+
+        li = list(map(lambda link: URL.format(link), li))
+
+        futures = []
+        with ThreadPoolExecutor(max_workers=2) as ex:
+            for link in li:
+                futures.append(ex.submit(get_content, link))
+
+        print(len(futures))
+        for future in futures:
+            print(future.result())
