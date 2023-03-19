@@ -47,3 +47,5 @@ def test_ones():
     internet_speed_dict = bot.get_internet_speed()
     pprint(internet_speed_dict)
 
+
+bot.tweet_at_provider()

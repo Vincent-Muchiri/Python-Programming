@@ -22,7 +22,7 @@ class InternetSpeedTwitterBot:
         chrome_options.headless = True
 
         # TODO Initialize the Chrome driver
-        self.chrome_driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH, options=chrome_options)
+        self.chrome_driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH)
 
     def get_internet_speed(self):
         """
@@ -70,7 +70,41 @@ class InternetSpeedTwitterBot:
         # TODO Return the a dict
         return internet_speed_details
     def tweet_at_provider(self):
-        pass
+        # TODO Get the credentials
+        with open("confidential.txt", mode="r") as credentials_file:
+            credentials_array = credentials_file.readlines()
+
+        username = credentials_array[0].strip("\n")
+        password = credentials_array[1]
+
+        # TODO Get the webpage
+        twitter_login_page = "https://twitter.com/login?lang=en"
+        self.chrome_driver.get(twitter_login_page)
+
+        # TODO Wait for input fields to appear and be clickable
+        username_input_field = WebDriverWait(self.chrome_driver, 30).until(EC.visibility_of_element_located((By.TAG_NAME, 'input')))
+
+        # TODO Add the username to the input field
+        username_input_field.send_keys(username)
+
+        # TODO Get the next button
+        next_btn = self.chrome_driver.find_element(By.XPATH, '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[6]')
+        next_btn.click()
+
+        # TODO Enter the password
+        sleep(5)
+        # pass_input = WebDriverWait(self.chrome_driver, 30).until(EC.text_to_be_present_in_element_attribute((By.TAG_NAME, 'input'), 'name', 'password'))
+        pass_input_array = [pass_input for pass_input in self.chrome_driver.find_elements(By.TAG_NAME, 'input') if pass_input.get_attribute('name') == 'password']
+        pass_input_array[0].send_keys(password)
+
+        # TODO Get the next button
+        # sleep(10)
+        # login_btn = WebDriverWait(self.chrome_driver, 10).until(EC.visibility_of_element_located((By.TAG_NAME, 'button')))
+        # login_div = self.chrome_driver.find_element(By.TAG_NAME, 'button')
+        # login_div.click()
+        # print("button clicked")
+
+
 
     def test_code(self):
         from concurrent.futures import ThreadPoolExecutor
