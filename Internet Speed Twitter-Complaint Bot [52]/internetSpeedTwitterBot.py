@@ -100,8 +100,13 @@ class InternetSpeedTwitterBot:
         # TODO Get the next button
         # sleep(10)
         # login_btn = WebDriverWait(self.chrome_driver, 10).until(EC.visibility_of_element_located((By.TAG_NAME, 'button')))
+        # login_span = WebDriverWait(self.chrome_driver, 20).until(EC.text_to_be_present_in_element_attribute((By.TAG_NAME, 'div'), 'role', 'button'))
         # login_div = self.chrome_driver.find_element(By.TAG_NAME, 'button')
-        # login_div.click()
+        login_div = self.chrome_driver.find_element(By.XPATH, '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/div')
+
+        login_div.click()
+        # login_btn.click()
+        # login_span.click()
         # print("button clicked")
 
 
