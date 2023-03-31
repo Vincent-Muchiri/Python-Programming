@@ -2,7 +2,8 @@ from internetSpeedTwitterBot import InternetSpeedTwitterBot
 from concurrent.futures import as_completed, ThreadPoolExecutor
 from pprint import pprint
 
-bot = InternetSpeedTwitterBot()
+# TODO Create the bot and pass the promised speeds in MBPS
+bot = InternetSpeedTwitterBot(promised_up=10, promised_down=15)
 
 
 # TODO Run multiple tests concurrently
@@ -43,9 +44,22 @@ def test_multiple_times():
 
     # TODO Calculate the average speed
 
-def test_ones():
-    internet_speed_dict = bot.get_internet_speed()
-    pprint(internet_speed_dict)
 
 
-bot.tweet_at_provider()
+# TODO Get the internet speeds and convert them to MBPS
+internet_speed_details = bot.get_internet_speed()
+upload_units = internet_speed_details['upload_units']
+download_units = internet_speed_details['download_units']
+
+actual_upload_speed = internet_speed_details['upload_speed']
+actual_download_speed = internet_speed_details['download_speed']
+
+if upload_units == "Kbps":
+    actual_upload_speed = internet_speed_details['upload_speed'] / 1000
+
+if download_units == "Kbps":
+    actual_download_speed = internet_speed_details['download_speed'] / 1000
+
+# TODO Check if the speed is as promised
+if bot.promised_up > actual_upload_speed or bot.promised_down > actual_download_speed:
+    bot.tweet_at_provider(internet_speed_details)

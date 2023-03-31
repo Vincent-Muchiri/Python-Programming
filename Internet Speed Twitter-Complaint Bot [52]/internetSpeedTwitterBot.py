@@ -1,6 +1,7 @@
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
@@ -11,9 +12,9 @@ CHROME_DRIVER_PATH = "../chromedriver.exe"
 TWITTER_URL = 'https://twitter.com/login?lang=en'
 
 class InternetSpeedTwitterBot:
-    def __init__(self):
-        self.promised_up = 10
-        self.promised_down = 150
+    def __init__(self, promised_up:float, promised_down:float):
+        self.promised_up = float(promised_up)
+        self.promised_down = float(promised_down)
 
         # TODO Set options
         chrome_options = Options()
@@ -22,7 +23,7 @@ class InternetSpeedTwitterBot:
         chrome_options.headless = True
 
         # TODO Initialize the Chrome driver
-        self.chrome_driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH)
+        self.chrome_driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH, options=chrome_options)
 
     def get_internet_speed(self):
         """
@@ -69,13 +70,19 @@ class InternetSpeedTwitterBot:
 
         # TODO Return the a dict
         return internet_speed_details
-    def tweet_at_provider(self):
+    def tweet_at_provider(self, internet_speed_dict: dict):
         # TODO Get the credentials
         with open("confidential.txt", mode="r") as credentials_file:
             credentials_array = credentials_file.readlines()
 
         username = credentials_array[0].strip("\n")
         password = credentials_array[1]
+
+        # TODO Open new tab
+        self.chrome_driver.execute_script("window.open('');")
+
+        # TODO Switch to new tab
+        self.chrome_driver.switch_to.window(self.chrome_driver.window_handles[1])
 
         # TODO Get the webpage
         twitter_login_page = "https://twitter.com/login?lang=en"
@@ -109,6 +116,37 @@ class InternetSpeedTwitterBot:
         # login_span.click()
         # print("button clicked")
 
+        # TODO Select tweet thing
+        # text_ele = WebDriverWait(self.chrome_driver, '20').until(EC.text_to_be_present_in_element_attribute((By.TAG_NAME, 'br'), 'data-text', 'true'))
+        # text_ele.click()
+        # tweet_div = self.chrome_driver.find_element(By.XPATH, '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div[2]/div/div/div/div/label/div[1]/div/div/div/div/div/div[2]/div/div/div/div')
+        #'//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[3]/div/div/div[2]/div[3]'
+        # tweet_div = WebDriverWait(self.chrome_driver, 20).until(EC.element_attribute_to_include(By.TAG_NAME, 'div'), 'data-offset-key')
+        # tweet_div.click()
+        # tweet_div.send_keys('This is a tweet text')
+        sleep(10)
+        div_array = self.chrome_driver.find_elements(By.TAG_NAME, 'div')
+        for div in div_array:
+            if div.get_attribute('data-offset-key'):
+                div.send_keys(f"Hey @internet_provider, why is my internet speed {internet_speed_dict['upload_speed']}{internet_speed_dict['upload_units']} up/ {internet_speed_dict['download_speed']}{internet_speed_dict['download_units']} down when I pay for {self.promised_up}Mbps up/ {self.promised_down}Mbps down?")
+
+                # TODO Send the tweet
+                div.send_keys(Keys.CONTROL + Keys.ENTER)
+                print("Tweet sent!")
+                break
+
+        # TODO Send the tweet
+        # span_array = self.chrome_driver.find_elements(By.TAG_NAME, 'div')
+        # print('span array length:', len(span_array))
+        # for span in span_array:
+        #     try:
+        #         if span.getText() == "Tweet":
+        #             print(span.getText())
+        #             span.click()
+        #     except AttributeError:
+        #         pass
+        #     else:
+        #         break
 
 
     def test_code(self):
