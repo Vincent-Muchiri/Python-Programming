@@ -8,7 +8,7 @@ from pprint import pprint
 class PropertyScraper:
     def __init__(self):
         self.FORM_URL = "https://forms.gle/GaCAMYw9tTpeudYK7"
-        self.PROPERTY_PAGE_URL = "https://www.zillow.com/homes/for_rent/1-_beds/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22usersSearchTerm%22%3Anull%2C%22mapBounds%22%3A%7B%22west%22%3A-122.56276167822266%2C%22east%22%3A-122.30389632177734%2C%22south%22%3A37.69261345230467%2C%22north%22%3A37.857877098316834%7D%2C%22isMapVisible%22%3Atrue%2C%22filterState%22%3A%7B%22fr%22%3A%7B%22value%22%3Atrue%7D%2C%22fsba%22%3A%7B%22value%22%3Afalse%7D%2C%22fsbo%22%3A%7B%22value%22%3Afalse%7D%2C%22nc%22%3A%7B%22value%22%3Afalse%7D%2C%22cmsn%22%3A%7B%22value%22%3Afalse%7D%2C%22auc%22%3A%7B%22value%22%3Afalse%7D%2C%22fore%22%3A%7B%22value%22%3Afalse%7D%2C%22pmf%22%3A%7B%22value%22%3Afalse%7D%2C%22pf%22%3A%7B%22value%22%3Afalse%7D%2C%22mp%22%3A%7B%22max%22%3A3000%7D%2C%22price%22%3A%7B%22max%22%3A872627%7D%2C%22beds%22%3A%7B%22min%22%3A1%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A12%7D"
+        self.PROPERTY_PAGE_URL = "https://www.property24.co.ke/1-bedroom-apartments-flats-to-rent-in-nairobi-c1890?toprice=20000"
 
         # TODO Create webdriver options
         driver_options = Options()
@@ -25,15 +25,32 @@ class PropertyScraper:
         response = requests.get(self.PROPERTY_PAGE_URL)
         response.raise_for_status()
         property_page_html = response.text
-        pprint(property_page_html)
-
+        # pprint(property_page_html)
 
         # TODO Instantiate BeautifulSoup
-        zillow_soup = BeautifulSoup(property_page_html, parser="html.parser")
+        property24_soup = BeautifulSoup(property_page_html)
 
-        # TODO Get the property indices
-        address_array = zillow_soup.find_all(name='address')
-        print(len(address_array))
+        # TODO Get the rental prices
+        # price_div = property24_soup.find(name='div', class_='sc_listingTilePrice')
+        # price_child_nodes_array = price_div.findChildren()
+        # for child in price_child_nodes_array:
+        #     print(child.text.replace("\r\n",""))
+
+        price_div_array = property24_soup.find_all(name='div', class_='sc_listingTilePrice')
+
+        rental_price_array = []
+        for price_div in price_div_array:
+            # x.append(price_div.text.strip().replace('\n\r\n', '').replace('\r\n', '').replace(" ", ""))
+            rental_price_array.append(" ".join(price_div.text.split()))
+
+        # TODO Get the property address
+        address_div_array = property24_soup.find_all(name='div', class_='sc_listingTileAddress')
+        address_array = []
+        for address_div in address_div_array:
+            address_array.append(" ".join(address_div.text.split()))
+        print(address_array)
+
+        # price_div_array = property24_soup.find_all(name='div', class_='sc_listingTilePrice')
 
 
     def fill_property_data(self):
