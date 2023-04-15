@@ -21,6 +21,11 @@ class PropertyScraper:
 
 
     def get_property_data(self):
+        '''
+        Scraps property data and returns the data as a dict
+        :return: dict: property details
+        '''
+
         # TODO Get the page html
         response = requests.get(self.PROPERTY_PAGE_URL)
         response.raise_for_status()
@@ -28,7 +33,7 @@ class PropertyScraper:
         # pprint(property_page_html)
 
         # TODO Instantiate BeautifulSoup
-        property24_soup = BeautifulSoup(property_page_html)
+        property24_soup = BeautifulSoup(property_page_html, features="html.parser")
 
         # TODO Get the rental prices
         # price_div = property24_soup.find(name='div', class_='sc_listingTilePrice')
@@ -48,9 +53,24 @@ class PropertyScraper:
         address_array = []
         for address_div in address_div_array:
             address_array.append(" ".join(address_div.text.split()))
-        print(address_array)
 
-        # price_div_array = property24_soup.find_all(name='div', class_='sc_listingTilePrice')
+        # TODO Get the property link
+        link_tag_array = property24_soup.find_all(name='a', class_='title', attrs='href')
+        link_array = []
+        for link_tag in link_tag_array:
+            link_array.append(f"https://www.property24.co.ke{link_tag.get('href')}")
+
+        # print(len(rental_price_array))
+        # print(len(address_array))
+        # print(len(link_array))
+
+        scraped_property_details_dict = {
+            'address': address_array,
+            'rental price': rental_price_array,
+            'link': link_array
+        }
+
+        return scraped_property_details_dict
 
 
     def fill_property_data(self):
