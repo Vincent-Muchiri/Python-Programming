@@ -11,9 +11,18 @@ from pprint import pprint
 
 class PropertyScraper:
     def __init__(self):
-        self.FORM_URL = "https://forms.gle/GaCAMYw9tTpeudYK7"
+        self.FORM_ENTRY_URL = "https://forms.gle/GaCAMYw9tTpeudYK7"
+        self.FORM_EDIT_URL = 'https://docs.google.com/forms/d/1zPeo_XzBvebbpONqbsVhDFdFYUFg-8_OSWohrQEQPuU/edit#responses'
         self.PROPERTY_PAGE_URL = "https://www.property24.co.ke/1-bedroom-apartments-flats-to-rent-in-nairobi-c1890?toprice=20000"
 
+        # TODO Create webdriver options
+        driver_options = Options()
+
+        # TODO Set headless option to True or False
+        driver_options.headless = False
+
+        # TODO Instantiate webdriver
+        self.chrome_driver = webdriver.Chrome(executable_path="../chromedriver.exe", options=driver_options)
 
     def get_property_data(self):
         '''
@@ -68,20 +77,11 @@ class PropertyScraper:
         return scraped_property_details_dict
 
     def fill_property_data(self, property_data: dict):
-        # TODO Create webdriver options
-        driver_options = Options()
-
-        # TODO Set headless option to True or False
-        driver_options.headless = False
-
-        # TODO Instantiate webdriver
-        chrome_driver = webdriver.Chrome(executable_path="../chromedriver.exe", options=driver_options)
-
         # TODO Open the form online
-        chrome_driver.get(url=self.FORM_URL)
+        self.chrome_driver.get(url=self.FORM_ENTRY_URL)
 
         # TODO Get all the inputs element objects
-        all_input_elems_array = chrome_driver.find_elements(By.TAG_NAME, 'input')
+        all_input_elems_array = self.chrome_driver.find_elements(By.TAG_NAME, 'input')
         # print(input_elems)
         input_elems_array = []
         for input_elem in all_input_elems_array:
@@ -95,7 +95,7 @@ class PropertyScraper:
         # TODO Enter the data to the form
         for property_index in range(len(address_array)):
             # TODO Get all the inputs element objects
-            all_input_elems_array = chrome_driver.find_elements(By.TAG_NAME, 'input')
+            all_input_elems_array = self.chrome_driver.find_elements(By.TAG_NAME, 'input')
             # print(input_elems)
             input_elems_array = []
             for input_elem in all_input_elems_array:
@@ -107,15 +107,31 @@ class PropertyScraper:
             input_elems_array[2].send_keys(link_array[property_index])
 
             # TODO Click submit button
-            submit_btn = chrome_driver.find_element(By.XPATH, '//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span/span')
+            submit_btn = self.chrome_driver.find_element(By.XPATH, '//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span/span')
             submit_btn.click()
 
             # TODO Click the link to a new response
-            new_response_btn = WebDriverWait(chrome_driver, 30).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[1]/div/div[4]/a')))
+            new_response_btn = WebDriverWait(self.chrome_driver, 30).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[1]/div/div[4]/a')))
             new_response_btn.click()
 
-
-
-
     def form_to_excel(self):
-        pass
+        # TODO Open new tab
+        self.chrome_driver.execute_script("window.open('');")
+
+        # TODO Switch to new tab
+        self.chrome_driver.switch_to.window(self.chrome_driver.window_handles[1])
+
+        # TODO Open link to edit form
+        self.chrome_driver.get(url=self.FORM_EDIT_URL)
+
+        # TODO Click the responses tab
+        # responses_tab = self.chrome_driver.find_element(By.XPATH, '//*[@id="tJHJj"]/div[3]/div[1]/div/div[2]/span/div')
+        # responses_tab.click()
+
+        # TODO Wait for elements to appear
+        WebDriverWait(self.chrome_driver, 30).until(EC.presence_of_element_located((By.XPATH, '//*[@id="ResponsesView"]/div/div[1]/div[1]/div[2]/div[1]/div[1]/div/span/span[2]')))
+
+        # TODO Click the link to the spreadsheet
+        google_sheet_link = self.chrome_driver.find_element(By.XPATH, '//*[@id="ResponsesView"]/div/div[1]/div[1]/div[2]/div[1]/div[1]/div/span/span[2]')
+        google_sheet_link.click()
+

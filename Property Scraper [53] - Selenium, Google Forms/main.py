@@ -11,3 +11,6 @@ print(scraped_data_dict)
 
 # TODO Fill in the Google sheet form using Selenium
 property_scraper_bot.fill_property_data(scraped_data_dict)
+
+# TODO View the data in an excel file
+property_scraper_bot.form_to_excel()
