@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from random import randint
 
 app = Flask(__name__)
@@ -20,8 +20,7 @@ def get_response(user_response):
                f"<h2>{user_response}<h2/>" \
                "<img src='https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif'>"
     elif dif > 4:
-        return "<h1>Too low!<h1/>" \
-               "<img src='https://media.giphy.com/media/pgxpZgteC4Sqs/giphy.gif'"
+        return render_template("index.html")
     elif dif < -4:
         return "<h1>Too high!<h1/>" \
                "<img src='https://media.giphy.com/media/fQogXfHt0uIgyOCXDo/giphy.gif'>"
