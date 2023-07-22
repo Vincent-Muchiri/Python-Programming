@@ -28,7 +28,7 @@ place_label.place(x=300, y=300)
 # Relative to other widgets i.e. there has to be a widget in row = 0 and column = 0
 # pack() and grid() cannot be used together
 grid_label = Label(text="Grid Label", padx=10, pady=20)
-grid_label.grid(column= 0, row=0)
+grid_label.grid(column=0, row=0)
 
 grid_button = Button(text="Grid Button", padx= 20)
 grid_button.grid(row=0, column=1)

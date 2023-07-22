@@ -71,7 +71,7 @@ while True:
         # TODO Buy the product
         next_product_elem = chrome_driver.find_element(By.CSS_SELECTOR, f"#product{next_product_num}")
 
-        # TODO Check if the the price is enabled
+        # TODO Check if the price is enabled
         class_name = next_product_elem.get_attribute("class")
         # print(class_name)
         if "enabled" in class_name:

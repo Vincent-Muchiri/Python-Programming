@@ -11,8 +11,8 @@ from pprint import pprint
 
 class PropertyScraper:
     def __init__(self):
-        self.FORM_ENTRY_URL = ""
-        self.FORM_EDIT_URL = ''
+        self.FORM_ENTRY_URL = "https://forms.gle/GaCAMYw9tTpeudYK7"
+        self.FORM_EDIT_URL = 'https://docs.google.com/forms/d/1zPeo_XzBvebbpONqbsVhDFdFYUFg-8_OSWohrQEQPuU/edit#responses'
         self.PROPERTY_PAGE_URL = "https://www.property24.co.ke/1-bedroom-apartments-flats-to-rent-in-nairobi-c1890?toprice=20000"
 
         # TODO Create webdriver options

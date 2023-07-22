@@ -5,6 +5,13 @@
     <mapping directory="$PROJECT_DIR$/../Arb-Appv2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Social-Media-Marketplace" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Web-Development" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../bio-lpg-gis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../healthcare_reliability" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../lyrical_data" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../mail-perge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../telegram-billboards" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../telegram-music-chart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../the-early-bird" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../transformer-reliability-KE" vcs="Git" />
   </component>
 </project>

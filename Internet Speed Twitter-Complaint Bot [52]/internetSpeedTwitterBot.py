@@ -68,7 +68,7 @@ class InternetSpeedTwitterBot:
 
         # print("Done")
 
-        # TODO Return the a dict
+        # TODO Return a dict
         return internet_speed_details
     def tweet_at_provider(self, internet_speed_dict: dict):
         # TODO Get the credentials

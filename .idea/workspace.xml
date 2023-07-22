@@ -1,37 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c36eb8b-45de-43b2-9ca3-cfa6ef8ea22d" name="Changes" comment="Some commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="8c36eb8b-45de-43b2-9ca3-cfa6ef8ea22d" name="Changes" comment="refactor: add config and sessions files in .gitignore">
+      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/data/2022-09-14/cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/data/2022-10-03/cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/starcasinosport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Python Programming.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jupyter-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp/data/product_page.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp/data/sensitive.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/data/secret data.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/data/token.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/common email operations.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/naivas_location_data.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/credentials.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/data/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/quickstart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/send using gmail api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/.idea/mail-perge.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/data/credentials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/token.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functions/basics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functions/python_decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jinja[57]/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jinja[57]/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium [48]/data/events.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium [48]/data/events.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Telegram Bot/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Telegram Bot/session_name.session" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Telegram Bot/telegram_app_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naivas_location_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/script2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/.idea/bio-lpg-gis-VinMuchiri.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/.ipynb_checkpoints/main-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/apify_credentials.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/confidential.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi East_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/Nairobi_Market_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/open_buildings_v2_polygons_your_own_wkt_polygon.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthcare_reliability/.ipynb_checkpoints/blackouts-7days-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthcare_reliability/rain_blackouts_analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/lyrical_data.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lyrical_data/main.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mail-perge/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mail-perge/data/gmail.send.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/data/subscription_list1.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mail-perge/data/token.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/data_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/jupyter-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-billboards/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-billboards/flowchart.drawio.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-billboards/src/session_name.session" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/telegram-music-chart.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/data_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/spotify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/telegram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/twitter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-10/mookh_cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-10/mtickets_cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-10/thewinningpost_cleaned.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/mookh_cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/mtickets_cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/thewinningpost_cleaned.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/tikiti_cleaned.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/event_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/2022-11-10/mookh/cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/2022-11-10/mookh_cleaned_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/mookh/raw_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/tikiti_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_cleaned.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_flash_tickets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_group_tickets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_uncleaned.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_upcoming_events.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/transformer-reliability-KE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/main.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/.idea/Arb-Appv2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/.idea/Arb-Appv2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/data_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/solutions/important pieces of code.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/solutions/important pieces of code.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/sportybet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/sportybet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Data Science.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data Science.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Commited_on_Sunday_21_08_2022.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EMAIL[32] - smtp/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium/test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSV/example.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CSV/example.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Tkinter/Layout Managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Tkinter/Layout Managers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]/internetSpeedTwitterBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]/internetSpeedTwitterBot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/propertyScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/propertyScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium [48]/Cookie Clicker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium [48]/Cookie Clicker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mail-perge/description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mail-perge/description.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Social-Media-Marketplace/.idea/Social-Media-Marketplace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Social-Media-Marketplace/.idea/Social-Media-Marketplace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web-Development/.idea/Web-Development.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/.idea/Web-Development.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web-Development/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web-Development/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi_clubs_data.1json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi_clubs_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/naivas_location_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/naivas_location_data_page1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../bio-lpg-gis/main.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../bio-lpg-gis/test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcare_reliability/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcare_reliability/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcare_reliability/blackouts-7days.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcare_reliability/blackouts-7days.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcare_reliability/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcare_reliability/main.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../telegram-billboards/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../telegram-billboards/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../telegram-billboards/.idea/telegram-billboards.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/telegram-billboards.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../telegram-billboards/src/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/src/data_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../telegram-billboards/src/telegram_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/src/telegram_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../telegram-music-chart/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-music-chart/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../the-early-bird/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../the-early-bird/test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../the-early-bird/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../the-early-bird/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,23 +186,40 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/../healthcare_reliability" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/../healthcare_reliability" source="origin/vincent" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="mtickets" />
+        <entry key="$PROJECT_DIR$/../telegram-billboards" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../Arb-Appv2/data/test data/Error in grouping.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Arb-Appv2/data/test data/sorted_by_time.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Arb-Appv2/data_manager.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Arb-Appv2/main.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Arb-Appv2/test.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Selenium [48]/Cookie Clicker.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Selenium [48]/test.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -102,16 +237,24 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Git.Branch.Popup.ShowAllRepositories&quot;: &quot;true&quot;,
     &quot;Project.color&quot;: &quot;2f1539&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowPython Console.ShowToolbar&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vin Muchiri/OneDrive/Python Programming/EMAIL[32] - smtp/data&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vin Muchiri/OneDrive/Python Programming&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -121,21 +264,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vin Muchiri\OneDrive\telegram-billboards" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\Telegram Bot" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\bio-lpg-gis" />
       <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\EMAIL[32] - smtp\data" />
       <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\EMAIL[32] - smtp" />
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Arb-Appv2\data\test data" />
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development" />
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development\Cards" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vin Muchiri\OneDrive\telegram-music-chart\data" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\Arb-Appv2\data\xbet_json_escaped" />
+      <recent name="C:\Users\Vin Muchiri\OneDrive\bio-lpg-gis" />
       <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\EMAIL[32] - smtp" />
       <recent name="C:\Users\Vin Muchiri\OneDrive\Arb-Appv2" />
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Arb-Appv2\solutions" />
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Python Programming\Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API\data" />
-      <recent name="C:\Users\Vin Muchiri\OneDrive\Web-Development\HTML Personal Site" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (2)">
+  <component name="RunManager" selected="Python.python_decorators">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="Python Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,28 +312,6 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Cookie Clicker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data Science" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Selenium [48]" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium [48]/Cookie Clicker.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Python Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,7 +327,29 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data Science" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/basics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -214,28 +357,28 @@
       <method v="2" />
     </configuration>
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mail-perge" />
+      <module name="telegram-billboards" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../mail-perge" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../telegram-billboards/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../mail-perge/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../telegram-billboards/src/main.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="python_decorators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data Science" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -243,58 +386,58 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/python_decorators.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data Science" />
+    <configuration name="telegram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="telegram-music-chart" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EMAIL[32] - smtp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../telegram-music-chart" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EMAIL[32] - smtp/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../telegram-music-chart/telegram.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="send using gmail api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data Science" />
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="telegram-music-chart" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EMAIL[32] - smtp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../telegram-music-chart" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EMAIL[32] - smtp/send using gmail api.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../telegram-music-chart/test.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -398,11 +541,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.send using gmail api" />
+        <item itemvalue="Python.python_decorators" />
+        <item itemvalue="Python.basics" />
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.Cookie Clicker" />
+        <item itemvalue="Python.telegram" />
       </list>
     </recent_temporary>
   </component>
@@ -503,20 +646,144 @@
       <workItem from="1670507632540" duration="504000" />
       <workItem from="1670594864708" duration="229000" />
       <workItem from="1671167487722" duration="7443000" />
-    </task>
-    <task id="LOCAL-00001" summary="Commited on Sunday 21/08/2022">
-      <created>1661073312987</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1661073312987</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Commited on Sunday 21/08/2022">
-      <created>1661073437153</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1661073437153</updated>
+      <workItem from="1671646905180" duration="3757000" />
+      <workItem from="1671686280511" duration="8052000" />
+      <workItem from="1671729642678" duration="5536000" />
+      <workItem from="1671858542493" duration="3765000" />
+      <workItem from="1671895860014" duration="2905000" />
+      <workItem from="1671903363010" duration="3607000" />
+      <workItem from="1672135455467" duration="209000" />
+      <workItem from="1672150145936" duration="4670000" />
+      <workItem from="1672169773918" duration="152000" />
+      <workItem from="1672241650714" duration="1060000" />
+      <workItem from="1672324652460" duration="9711000" />
+      <workItem from="1672415771626" duration="9294000" />
+      <workItem from="1672727244307" duration="2066000" />
+      <workItem from="1672738453701" duration="1608000" />
+      <workItem from="1672743593907" duration="2313000" />
+      <workItem from="1672900881029" duration="674000" />
+      <workItem from="1672919361480" duration="3310000" />
+      <workItem from="1672997746577" duration="2000" />
+      <workItem from="1672998691941" duration="264000" />
+      <workItem from="1673077539805" duration="8156000" />
+      <workItem from="1673344170106" duration="1650000" />
+      <workItem from="1674025167791" duration="17623000" />
+      <workItem from="1674111305229" duration="606000" />
+      <workItem from="1674566847092" duration="1146000" />
+      <workItem from="1674815833682" duration="1632000" />
+      <workItem from="1676203742501" duration="1940000" />
+      <workItem from="1676269279986" duration="5853000" />
+      <workItem from="1676275844725" duration="18000" />
+      <workItem from="1676461526886" duration="1420000" />
+      <workItem from="1676462972931" duration="5179000" />
+      <workItem from="1676525798883" duration="692000" />
+      <workItem from="1676527065091" duration="6106000" />
+      <workItem from="1676539421628" duration="8963000" />
+      <workItem from="1676615008106" duration="3336000" />
+      <workItem from="1676618390885" duration="3205000" />
+      <workItem from="1676726463839" duration="9232000" />
+      <workItem from="1676878011167" duration="2145000" />
+      <workItem from="1676880273660" duration="211000" />
+      <workItem from="1676895831618" duration="3426000" />
+      <workItem from="1676960580338" duration="6744000" />
+      <workItem from="1676971578997" duration="813000" />
+      <workItem from="1676981400958" duration="2805000" />
+      <workItem from="1676989028830" duration="1071000" />
+      <workItem from="1677051182472" duration="604000" />
+      <workItem from="1677141291355" duration="2146000" />
+      <workItem from="1677436591376" duration="89000" />
+      <workItem from="1677488739256" duration="604000" />
+      <workItem from="1677681294247" duration="1921000" />
+      <workItem from="1678777917292" duration="5280000" />
+      <workItem from="1678797538146" duration="1859000" />
+      <workItem from="1678858622776" duration="3231000" />
+      <workItem from="1678946887253" duration="228000" />
+      <workItem from="1678947131434" duration="362000" />
+      <workItem from="1678970908028" duration="6540000" />
+      <workItem from="1679044479039" duration="4178000" />
+      <workItem from="1679222497174" duration="9445000" />
+      <workItem from="1679473918271" duration="1875000" />
+      <workItem from="1679547280613" duration="3168000" />
+      <workItem from="1679836933331" duration="1645000" />
+      <workItem from="1679880193920" duration="164000" />
+      <workItem from="1679961992745" duration="968000" />
+      <workItem from="1680086905269" duration="4830000" />
+      <workItem from="1680097890915" duration="3193000" />
+      <workItem from="1680198019196" duration="1988000" />
+      <workItem from="1680200148812" duration="30000" />
+      <workItem from="1680250598139" duration="1757000" />
+      <workItem from="1680511967986" duration="10000" />
+      <workItem from="1680631506795" duration="1192000" />
+      <workItem from="1680998756598" duration="1768000" />
+      <workItem from="1681000578771" duration="49000" />
+      <workItem from="1681040917803" duration="2682000" />
+      <workItem from="1681432809258" duration="2743000" />
+      <workItem from="1681453957830" duration="4929000" />
+      <workItem from="1681467520997" duration="548000" />
+      <workItem from="1681468094356" duration="6205000" />
+      <workItem from="1681558759324" duration="9163000" />
+      <workItem from="1681646054869" duration="6240000" />
+      <workItem from="1681656039237" duration="3995000" />
+      <workItem from="1681781965961" duration="594000" />
+      <workItem from="1681819186069" duration="821000" />
+      <workItem from="1681984564295" duration="247000" />
+      <workItem from="1682123459095" duration="3102000" />
+      <workItem from="1682295210283" duration="2022000" />
+      <workItem from="1682408829314" duration="7825000" />
+      <workItem from="1682426059818" duration="1566000" />
+      <workItem from="1682442413324" duration="234000" />
+      <workItem from="1682444564921" duration="2024000" />
+      <workItem from="1682491476238" duration="23656000" />
+      <workItem from="1682570045568" duration="1240000" />
+      <workItem from="1682571726136" duration="9236000" />
+      <workItem from="1682620099930" duration="168000" />
+      <workItem from="1683685488054" duration="3484000" />
+      <workItem from="1683701039687" duration="4939000" />
+      <workItem from="1683766012837" duration="2153000" />
+      <workItem from="1683804224423" duration="2204000" />
+      <workItem from="1683872712490" duration="656000" />
+      <workItem from="1683896919235" duration="1347000" />
+      <workItem from="1684137236044" duration="413000" />
+      <workItem from="1684156389040" duration="166000" />
+      <workItem from="1684156568701" duration="120000" />
+      <workItem from="1684156735786" duration="6499000" />
+      <workItem from="1684236320547" duration="2310000" />
+      <workItem from="1684402085963" duration="13572000" />
+      <workItem from="1684476980145" duration="20754000" />
+      <workItem from="1684740858197" duration="805000" />
+      <workItem from="1684919455266" duration="3035000" />
+      <workItem from="1684925332289" duration="3460000" />
+      <workItem from="1685098255306" duration="680000" />
+      <workItem from="1685178547500" duration="11707000" />
+      <workItem from="1685207446585" duration="2082000" />
+      <workItem from="1685259926190" duration="3569000" />
+      <workItem from="1685263620798" duration="905000" />
+      <workItem from="1685265144332" duration="7492000" />
+      <workItem from="1685281214395" duration="3424000" />
+      <workItem from="1685372985837" duration="6140000" />
+      <workItem from="1685436167953" duration="7557000" />
+      <workItem from="1685610259962" duration="544000" />
+      <workItem from="1685637531222" duration="190000" />
+      <workItem from="1685685224615" duration="12368000" />
+      <workItem from="1686145056491" duration="173000" />
+      <workItem from="1686145251721" duration="10422000" />
+      <workItem from="1686206932216" duration="4713000" />
+      <workItem from="1686216455881" duration="19202000" />
+      <workItem from="1686314542590" duration="346000" />
+      <workItem from="1686317222870" duration="637000" />
+      <workItem from="1686579321364" duration="6632000" />
+      <workItem from="1686645048233" duration="2080000" />
+      <workItem from="1686807263165" duration="2103000" />
+      <workItem from="1686828066739" duration="933000" />
+      <workItem from="1687273185608" duration="910000" />
+      <workItem from="1687350375013" duration="9980000" />
+      <workItem from="1687425734191" duration="3537000" />
+      <workItem from="1687792638368" duration="750000" />
+      <workItem from="1688015163534" duration="559000" />
+      <workItem from="1688015838167" duration="2641000" />
+      <workItem from="1689755523589" duration="22000" />
+      <workItem from="1689755617689" duration="18000" />
+      <workItem from="1689900992923" duration="96000" />
     </task>
     <task id="LOCAL-00003" summary="Fix DataFrame column duplication and reorder issue">
       <created>1661939222169</created>
@@ -686,7 +953,182 @@
       <option name="project" value="LOCAL" />
       <updated>1665135152465</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Can't remember">
+      <created>1671647632343</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1671647632343</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Can't remember">
+      <created>1671647687541</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1671647687541</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat: GUI features for login and search details">
+      <created>1671862441493</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1671862441493</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: open all filters tab&#10;BREAKING CHANGE: fail occasionally to select the Easy Apply toggle button">
+      <created>1674027648035</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1674027648035</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat(api)!: get location data from Google Places API using text search&#10;Failed to fetch next page data using the page_token">
+      <created>1676879892136</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1676879892136</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat(api)!: draw polygon using viewport coordinates from Places API&#10;BREAKING CHANGE: draws large/inaccurate polygon">
+      <created>1676880033866</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1676880033866</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: get internet speeds from fast.com">
+      <created>1678976867653</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1678976867653</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat: get internet speeds from fast.com">
+      <created>1678976907179</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1678976907179</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat: run the bot in headless mode">
+      <created>1678977500197</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1678977500197</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat: add a method to test Selenium concurrently">
+      <created>1679048611500</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1679048611500</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat!: run Selenium test concurrently using a function">
+      <created>1679048678413</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1679048678413</updated>
+    </task>
+    <task id="LOCAL-00038" summary="feat: open the Twitter login page and fill in the credentials">
+      <created>1679238483370</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1679238483370</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat: log into Twitter after filling credentials">
+      <created>1679552091452</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1679552091452</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat: Twitter in new tab and send tweets">
+      <created>1680251306144</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1680251306144</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat: first commit">
+      <created>1681434974889</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1681434974889</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat: get property rental prices and addresses">
+      <created>1681560416701</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1681560416701</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat: scrap property data and store it in a dict">
+      <created>1681563065648</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1681563065648</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat: fill data to a Google form">
+      <created>1681648790711</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1681648790712</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat: open spreadsheet with responses&#10;WARNING! Link to edit form doesn't work. Log in required">
+      <created>1681667881982</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1681667881982</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat: links redacted">
+      <created>1681667989962</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1681667989962</updated>
+    </task>
+    <task id="LOCAL-00047" summary="first commit">
+      <created>1682582599784</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1682582599784</updated>
+    </task>
+    <task id="LOCAL-00048" summary="feat: remove kplc_connected filter">
+      <created>1684297960494</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1684297960494</updated>
+    </task>
+    <task id="LOCAL-00049" summary="feat: plot a graph of">
+      <created>1684487527418</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1684487527418</updated>
+    </task>
+    <task id="LOCAL-00050" summary="feat: set up the Telegram API client">
+      <created>1686644459090</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1686644459091</updated>
+    </task>
+    <task id="LOCAL-00051" summary="refactor: add config and sessions files in .gitignore">
+      <created>1686644626743</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1686644626743</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,6 +1146,26 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -725,84 +1187,84 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/master" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Commited on Sunday 21/08/2022" />
-    <MESSAGE value="Fix DataFrame column duplication and reorder issue" />
-    <MESSAGE value="Finish lesson later" />
-    <MESSAGE value="Migrating to VSCODE" />
-    <MESSAGE value="Converting to OOP" />
-    <MESSAGE value="Created a method called create_cleaned_soccer_dict in the DataManager class that returns an organized dictionary of cleaned data" />
-    <MESSAGE value="Retrieving away_odds yields IndexError. Exception caught" />
-    <MESSAGE value="Retrieving odds yields IndexError/TypeError. Exception caught" />
-    <MESSAGE value="Removed the &quot;bookmaker&quot; class attribute from the DataManager class" />
-    <MESSAGE value="Run multiple functions using asyncio.gather()" />
-    <MESSAGE value="Run multiple functions by adding them to individual future lists and concatinating them together to a single list" />
-    <MESSAGE value="Changed the format of the API ENDPOINT" />
-    <MESSAGE value="Day 41 complete. Learned about HTML, &lt;h1&gt;, &lt;p&gt;, &lt;a&gt;," />
-    <MESSAGE value="html.unescape() added to team names" />
-    <MESSAGE value="1. Added self.current_date to the method &quot;create_cleaned_soccer_dict&quot;&#10;2. Converted the date object in DataManager class to a string&#10;3. Added &quot;sorted_list_dicts&quot; to DataManager class&#10;4. Fixed the null return values of betika and xbet tomorrow_matches methods" />
-    <MESSAGE value="1. Restructured the cleaned dictionary&#10;2. Converted the date object to a string" />
-    <MESSAGE value="1. Created &quot;split_into_days&quot; method to divide the data into two&#10;2. Created &quot;remove_non_recurring_matches&quot; method to remove matches offered by only one bookmaker&#10;3. Created &quot;grouped_cleaned_matches&quot; method to return a dictionary of list of the individual matches" />
-    <MESSAGE value="Lesson 45" />
     <MESSAGE value="Lesson 46 Done.&#10;- Use OOP&#10;- Create a GUI&#10;- Create a data dir if it doesn't exist&#10;- Confirm the playlist doesn't exist first&#10;- Save the sensitive authentication documents in a json or text format locally&#10;- Try using threading and the map function to maintain the order of request" />
     <MESSAGE value="Lesson 46 Done.&#10;- Use OOP&#10;- Create a GUI&#10;- Create a data dir if it doesn't exist&#10;- Confirm the playlist doesn't exist first&#10;- Save the sensitive authentication documents in a json or text format locally&#10;- Try using threading and the map function to maintain the order of request&#10;- Add a sharing functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 46 Done.&#10;- Use OOP&#10;- Create a GUI&#10;- Create a data dir if it doesn't exist&#10;- Confirm the playlist doesn't exist first&#10;- Save the sensitive authentication documents in a json or text format locally&#10;- Try using threading and the map function to maintain the order of request&#10;- Add a sharing functionality" />
+    <MESSAGE value="Can't remember" />
+    <MESSAGE value="feat: GUI features for login and search details" />
+    <MESSAGE value="feat: open all filters tab&#10;BREAKING CHANGE: fail occasionally to select the Easy Apply toggle button" />
+    <MESSAGE value="feat(api)!: get location data from Google Places API using text search&#10;Failed to fetch next page data using the page_token" />
+    <MESSAGE value="feat(api)!: draw polygon using viewport coordinates from Places API&#10;BREAKING CHANGE: draws large/inaccurate polygon" />
+    <MESSAGE value="feat: get internet speeds from fast.com" />
+    <MESSAGE value="feat: run the bot in headless mode" />
+    <MESSAGE value="feat: add a method to test Selenium concurrently" />
+    <MESSAGE value="feat!: run Selenium test concurrently using a function" />
+    <MESSAGE value="feat: open the Twitter login page and fill in the credentials" />
+    <MESSAGE value="feat: log into Twitter after filling credentials" />
+    <MESSAGE value="feat: Twitter in new tab and send tweets" />
+    <MESSAGE value="feat: first commit" />
+    <MESSAGE value="feat: get property rental prices and addresses" />
+    <MESSAGE value="feat: scrap property data and store it in a dict" />
+    <MESSAGE value="feat: fill data to a Google form" />
+    <MESSAGE value="feat: open spreadsheet with responses&#10;WARNING! Link to edit form doesn't work. Log in required" />
+    <MESSAGE value="feat: links redacted" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="feat: remove kplc_connected filter" />
+    <MESSAGE value="feat: plot a graph of" />
+    <MESSAGE value="feat: set up the Telegram API client" />
+    <MESSAGE value="refactor: add config and sessions files in .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: add config and sessions files in .gitignore" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python_Programming$List_comprehension_vs_Generator_expression.coverage" NAME="List comprehension vs Generator expression Coverage Results" MODIFIED="1661930862863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/List and Dictionary Comprehension" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Filling_Forms.coverage" NAME="Filling Forms Coverage Results" MODIFIED="1665655741304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Arguments.coverage" NAME="Arguments Coverage Results" MODIFIED="1663941162412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
-    <SUITE FILE_PATH="coverage/Python_Programming$send_using_gmail_api.coverage" NAME="send using gmail api Coverage Results" MODIFIED="1670232466665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test__3_.coverage" NAME="test (3) Coverage Results" MODIFIED="1668157332680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Treeview.coverage" NAME="Treeview Coverage Results" MODIFIED="1660891369217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
-    <SUITE FILE_PATH="coverage/Python_Programming$sportybet.coverage" NAME="sportybet Coverage Results" MODIFIED="1662800696949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
-    <SUITE FILE_PATH="coverage/Python_Programming$threading_tests.coverage" NAME="threading_tests Coverage Results" MODIFIED="1663171269379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
-    <SUITE FILE_PATH="coverage/Python_Programming$sportyBet_today_soccer_matches.coverage" NAME="sportyBet today soccer matches Coverage Results" MODIFIED="1662521621788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/sportyBet/soccer" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mookh.coverage" NAME="mookh Coverage Results" MODIFIED="1668048322562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Python_Programming$quickstart.coverage" NAME="quickstart Coverage Results" MODIFIED="1669020965131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1671173553336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp" />
-    <SUITE FILE_PATH="coverage/Python_Programming$widgets_examples.coverage" NAME="widgets examples Coverage Results" MODIFIED="1660809157341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Sync_vs_Async_Programming.coverage" NAME="Sync vs Async Programming Coverage Results" MODIFIED="1663045863946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
-    <SUITE FILE_PATH="coverage/Python_Programming$interaction.coverage" NAME="interaction Coverage Results" MODIFIED="1665654192052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mainV2.coverage" NAME="mainV2 Coverage Results" MODIFIED="1662519179379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mtickets.coverage" NAME="mtickets Coverage Results" MODIFIED="1667551544686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Cookie_Clicker.coverage" NAME="Cookie Clicker Coverage Results" MODIFIED="1669038176187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$tikiti.coverage" NAME="tikiti Coverage Results" MODIFIED="1668171428838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1666516683742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test.coverage" NAME="test Coverage Results" MODIFIED="1665969410734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1665642638924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
     <SUITE FILE_PATH="coverage/Python_Programming$thewinningpost.coverage" NAME="thewinningpost Coverage Results" MODIFIED="1667359990247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Python_Programming$live_website.coverage" NAME="live_website Coverage Results" MODIFIED="1664786989083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Beatiful Soup [45]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main.coverage" NAME="main Coverage Results" MODIFIED="1671173130408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
-    <SUITE FILE_PATH="coverage/Python_Programming$foxbet_today_soccer_matches.coverage" NAME="foxbet today soccer matches Coverage Results" MODIFIED="1662521577262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/foxbet/soccer" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1669090592286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../mail-perge" />
-    <SUITE FILE_PATH="coverage/Python_Programming$python_org_event_scraper.coverage" NAME="python.org event scraper Coverage Results" MODIFIED="1665642941860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mainV3.coverage" NAME="mainV3 Coverage Results" MODIFIED="1661864443665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$utils.coverage" NAME="utils Coverage Results" MODIFIED="1681466470815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/requests" />
+    <SUITE FILE_PATH="coverage/Python_Programming$submit_query.coverage" NAME="submit_query Coverage Results" MODIFIED="1672339228239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Filling_Forms.coverage" NAME="Filling Forms Coverage Results" MODIFIED="1671702852143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$send_using_gmail_api.coverage" NAME="send using gmail api Coverage Results" MODIFIED="1670232466665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1671173553336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$dv1_blackouts_7days_per_county.coverage" NAME="dv1_blackouts_7days_per_county Coverage Results" MODIFIED="1682521820072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../healthcare_reliability" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test.coverage" NAME="test Coverage Results" MODIFIED="1665969410734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$tikiti.coverage" NAME="tikiti Coverage Results" MODIFIED="1668171428838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$hello.coverage" NAME="hello Coverage Results" MODIFIED="1683704481018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hello_flask" />
     <SUITE FILE_PATH="coverage/Python_Programming$List_Arrays_.coverage" NAME="List(Arrays) Coverage Results" MODIFIED="1668252848758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Dictionary.coverage" NAME="Dictionary Coverage Results" MODIFIED="1663595258057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Sync_vs_Async_Programming.coverage" NAME="Sync vs Async Programming Coverage Results" MODIFIED="1663045863946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1680250805326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$List_comprehension_vs_Generator_expression.coverage" NAME="List comprehension vs Generator expression Coverage Results" MODIFIED="1661930862863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/List and Dictionary Comprehension" />
     <SUITE FILE_PATH="coverage/Python_Programming$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1666077177714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Programming$sportyBet_today_soccer_matches.coverage" NAME="sportyBet today soccer matches Coverage Results" MODIFIED="1662521621788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/sportyBet/soccer" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main.coverage" NAME="main Coverage Results" MODIFIED="1676617811930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bio-lpg-gis" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main.coverage" NAME="main Coverage Results" MODIFIED="1682444788067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CSV" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mainV3.coverage" NAME="mainV3 Coverage Results" MODIFIED="1661864443665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+    <SUITE FILE_PATH="coverage/Python_Programming$widgets_examples.coverage" NAME="widgets examples Coverage Results" MODIFIED="1671861209749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test__3_.coverage" NAME="test (3) Coverage Results" MODIFIED="1668157332680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$test.coverage" NAME="test Coverage Results" MODIFIED="1681647837358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
+    <SUITE FILE_PATH="coverage/Python_Programming$quickstart.coverage" NAME="quickstart Coverage Results" MODIFIED="1669020965131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$python_decorators.coverage" NAME="python_decorators Coverage Results" MODIFIED="1688018100695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1674815954920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mookh.coverage" NAME="mookh Coverage Results" MODIFIED="1668048322562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$propertyScraper.coverage" NAME="propertyScraper Coverage Results" MODIFIED="1681560685919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1681820036520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1671859441674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+    <SUITE FILE_PATH="coverage/Python_Programming$python_org_event_scraper.coverage" NAME="python.org event scraper Coverage Results" MODIFIED="1665642941860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Layout_Managers.coverage" NAME="Layout Managers Coverage Results" MODIFIED="1671860945824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mainV2.coverage" NAME="mainV2 Coverage Results" MODIFIED="1662519179379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main_V2.coverage" NAME="main V2 Coverage Results" MODIFIED="1681433223205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Trivia App[34] - API, tkinter" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Arguments.coverage" NAME="Arguments Coverage Results" MODIFIED="1663941162412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
+    <SUITE FILE_PATH="coverage/Python_Programming$threading_tests.coverage" NAME="threading_tests Coverage Results" MODIFIED="1663171269379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1684156630332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$internetSpeedTwitterBot.coverage" NAME="internetSpeedTwitterBot Coverage Results" MODIFIED="1679236977798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mtickets.coverage" NAME="mtickets Coverage Results" MODIFIED="1667551544686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Python_Programming$sportybet.coverage" NAME="sportybet Coverage Results" MODIFIED="1662800696949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Cookie_Clicker.coverage" NAME="Cookie Clicker Coverage Results" MODIFIED="1669038176187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1666516683742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
+    <SUITE FILE_PATH="coverage/Python_Programming$foxbet_today_soccer_matches.coverage" NAME="foxbet today soccer matches Coverage Results" MODIFIED="1662521577262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/foxbet/soccer" />
+    <SUITE FILE_PATH="coverage/Python_Programming$interaction.coverage" NAME="interaction Coverage Results" MODIFIED="1665654192052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Treeview.coverage" NAME="Treeview Coverage Results" MODIFIED="1660891369217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
+    <SUITE FILE_PATH="coverage/Python_Programming$live_website.coverage" NAME="live_website Coverage Results" MODIFIED="1664786989083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Beatiful Soup [45]" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1685193054935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../telegram-music-chart" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Dictionary.coverage" NAME="Dictionary Coverage Results" MODIFIED="1663595258057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
