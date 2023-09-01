@@ -4,152 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c36eb8b-45de-43b2-9ca3-cfa6ef8ea22d" name="Changes" comment="refactor: add config and sessions files in .gitignore">
-      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/data/2022-09-14/cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/data/2022-10-03/cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Arb-Appv2/starcasinosport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Python Programming.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jupyter-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp/data/product_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp/data/sensitive.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/data/secret data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/data/token.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/naivas_location_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/data/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMAIL[32] - smtp/token.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Functions/basics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Functions/python_decorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jinja[57]/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jinja[57]/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium [48]/data/events.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Selenium [48]/data/events.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Telegram Bot/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Telegram Bot/session_name.session" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Telegram Bot/telegram_app_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naivas_location_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/script2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Web-Development/ChatGPT Test/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/.idea/bio-lpg-gis-VinMuchiri.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/.ipynb_checkpoints/main-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/apify_credentials.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/confidential.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi East_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/Nairobi_Market_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/data/open_buildings_v2_polygons_your_own_wkt_polygon.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bio-lpg-gis/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../healthcare_reliability/.ipynb_checkpoints/blackouts-7days-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../healthcare_reliability/rain_blackouts_analysis.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/lyrical_data.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lyrical_data/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lyrical_data/main.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/data/gmail.send.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail-perge/data/token.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/jupyter-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-billboards/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-billboards/flowchart.drawio.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-billboards/src/session_name.session" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/telegram-music-chart.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/data_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/spotify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/telegram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../telegram-music-chart/twitter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-10/mookh_cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-10/mtickets_cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-10/thewinningpost_cleaned.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/mookh_cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/mtickets_cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/thewinningpost_cleaned.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/2022-11-12/tikiti_cleaned.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/event_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/2022-11-10/mookh/cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/2022-11-10/mookh_cleaned_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/mookh/raw_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/data/test/tikiti_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_cleaned.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_flash_tickets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_group_tickets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_uncleaned.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../the-early-bird/test/thewinningpost_upcoming_events.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/transformer-reliability-KE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transformer-reliability-KE/main.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/.idea/Arb-Appv2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/.idea/Arb-Appv2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/data_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/solutions/important pieces of code.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/solutions/important pieces of code.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/sportybet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/sportybet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Arb-Appv2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Arb-Appv2/test.py" afterDir="false" />
+    <list default="true" id="8c36eb8b-45de-43b2-9ca3-cfa6ef8ea22d" name="Changes" comment="commit Flask and Jinja projects">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Data Science.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data Science.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Billboards Top 100 Spotify Playlist Maker [46] - Beautifulsoup, Spotify API/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSV/example.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CSV/example.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/Tkinter/Layout Managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Tkinter/Layout Managers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]/internetSpeedTwitterBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]/internetSpeedTwitterBot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/propertyScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms/propertyScraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium [48]/Cookie Clicker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium [48]/Cookie Clicker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Social-Media-Marketplace/.idea/Social-Media-Marketplace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Social-Media-Marketplace/.idea/Social-Media-Marketplace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Web-Development/.idea/Web-Development.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/.idea/Web-Development.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Web-Development/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Web-Development/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Web-Development/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi_clubs_data.1json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/Embakasi_clubs_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/naivas_location_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/data/naivas_location_data_page1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../bio-lpg-gis/main.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bio-lpg-gis/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../bio-lpg-gis/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../healthcare_reliability/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcare_reliability/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../healthcare_reliability/blackouts-7days.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcare_reliability/blackouts-7days.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../healthcare_reliability/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcare_reliability/main.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../telegram-billboards/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../telegram-billboards/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../telegram-billboards/.idea/telegram-billboards.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/.idea/telegram-billboards.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../telegram-billboards/src/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/src/data_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../telegram-billboards/src/telegram_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-billboards/src/telegram_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../telegram-music-chart/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram-music-chart/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../the-early-bird/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../the-early-bird/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../the-early-bird/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../the-early-bird/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +20,7 @@
   </component>
   <component name="ChangesViewManager">
     <option name="groupingKeys">
+      <option value="directory" />
       <option value="repository" />
     </option>
   </component>
@@ -221,9 +84,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vincent-Muchiri&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="254535b4-1093-4ba7-88dd-5656080ecefa" />
+        <option name="url" value="https://github.com/Vincent-Muchiri/Python-Programming.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2DQZ5rwvB0Ld0mT8xchrIRJiGEe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -247,13 +127,13 @@
     &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
     &quot;database.data.extractors.current.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vin Muchiri/OneDrive/Python Programming&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vincent/OneDrive/Python Programming&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -784,6 +664,25 @@
       <workItem from="1689755523589" duration="22000" />
       <workItem from="1689755617689" duration="18000" />
       <workItem from="1689900992923" duration="96000" />
+      <workItem from="1692337412902" duration="14000" />
+      <workItem from="1692338541424" duration="155000" />
+      <workItem from="1692338749169" duration="136000" />
+      <workItem from="1692340759456" duration="3435000" />
+      <workItem from="1692432719750" duration="1193000" />
+      <workItem from="1692535108966" duration="1211000" />
+      <workItem from="1692580214007" duration="38000" />
+      <workItem from="1692634522681" duration="11000" />
+      <workItem from="1692666851478" duration="587000" />
+      <workItem from="1692667466705" duration="1907000" />
+      <workItem from="1692685085185" duration="5053000" />
+      <workItem from="1692706136462" duration="1734000" />
+      <workItem from="1693203536022" duration="26000" />
+      <workItem from="1693292792435" duration="35000" />
+      <workItem from="1693410067768" duration="9461000" />
+      <workItem from="1693494742970" duration="5135000" />
+      <workItem from="1693547621413" duration="4708000" />
+      <workItem from="1693553574540" duration="36000" />
+      <workItem from="1693553763464" duration="3272000" />
     </task>
     <task id="LOCAL-00003" summary="Fix DataFrame column duplication and reorder issue">
       <created>1661939222169</created>
@@ -1128,7 +1027,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686644626743</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1191,9 +1090,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lesson 46 Done.&#10;- Use OOP&#10;- Create a GUI&#10;- Create a data dir if it doesn't exist&#10;- Confirm the playlist doesn't exist first&#10;- Save the sensitive authentication documents in a json or text format locally&#10;- Try using threading and the map function to maintain the order of request" />
-    <MESSAGE value="Lesson 46 Done.&#10;- Use OOP&#10;- Create a GUI&#10;- Create a data dir if it doesn't exist&#10;- Confirm the playlist doesn't exist first&#10;- Save the sensitive authentication documents in a json or text format locally&#10;- Try using threading and the map function to maintain the order of request&#10;- Add a sharing functionality" />
-    <MESSAGE value="Can't remember" />
     <MESSAGE value="feat: GUI features for login and search details" />
     <MESSAGE value="feat: open all filters tab&#10;BREAKING CHANGE: fail occasionally to select the Easy Apply toggle button" />
     <MESSAGE value="feat(api)!: get location data from Google Places API using text search&#10;Failed to fetch next page data using the page_token" />
@@ -1216,55 +1112,58 @@
     <MESSAGE value="feat: plot a graph of" />
     <MESSAGE value="feat: set up the Telegram API client" />
     <MESSAGE value="refactor: add config and sessions files in .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: add config and sessions files in .gitignore" />
+    <MESSAGE value="feat. create a website using Bootstrap examples" />
+    <MESSAGE value="feat. create a startup website using Bootstrap" />
+    <MESSAGE value="commit Flask and Jinja projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit Flask and Jinja projects" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python_Programming$thewinningpost.coverage" NAME="thewinningpost Coverage Results" MODIFIED="1667359990247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$utils.coverage" NAME="utils Coverage Results" MODIFIED="1681466470815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/requests" />
-    <SUITE FILE_PATH="coverage/Python_Programming$submit_query.coverage" NAME="submit_query Coverage Results" MODIFIED="1672339228239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Filling_Forms.coverage" NAME="Filling Forms Coverage Results" MODIFIED="1671702852143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$send_using_gmail_api.coverage" NAME="send using gmail api Coverage Results" MODIFIED="1670232466665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1671173553336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$dv1_blackouts_7days_per_county.coverage" NAME="dv1_blackouts_7days_per_county Coverage Results" MODIFIED="1682521820072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../healthcare_reliability" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test.coverage" NAME="test Coverage Results" MODIFIED="1665969410734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$tikiti.coverage" NAME="tikiti Coverage Results" MODIFIED="1668171428838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$hello.coverage" NAME="hello Coverage Results" MODIFIED="1683704481018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hello_flask" />
-    <SUITE FILE_PATH="coverage/Python_Programming$List_Arrays_.coverage" NAME="List(Arrays) Coverage Results" MODIFIED="1668252848758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Sync_vs_Async_Programming.coverage" NAME="Sync vs Async Programming Coverage Results" MODIFIED="1663045863946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1680250805326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$List_comprehension_vs_Generator_expression.coverage" NAME="List comprehension vs Generator expression Coverage Results" MODIFIED="1661930862863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/List and Dictionary Comprehension" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1666077177714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_Programming$sportyBet_today_soccer_matches.coverage" NAME="sportyBet today soccer matches Coverage Results" MODIFIED="1662521621788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/sportyBet/soccer" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main.coverage" NAME="main Coverage Results" MODIFIED="1676617811930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bio-lpg-gis" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main.coverage" NAME="main Coverage Results" MODIFIED="1682444788067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CSV" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mainV3.coverage" NAME="mainV3 Coverage Results" MODIFIED="1661864443665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
-    <SUITE FILE_PATH="coverage/Python_Programming$widgets_examples.coverage" NAME="widgets examples Coverage Results" MODIFIED="1671861209749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test__3_.coverage" NAME="test (3) Coverage Results" MODIFIED="1668157332680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$test.coverage" NAME="test Coverage Results" MODIFIED="1681647837358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
-    <SUITE FILE_PATH="coverage/Python_Programming$quickstart.coverage" NAME="quickstart Coverage Results" MODIFIED="1669020965131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$python_decorators.coverage" NAME="python_decorators Coverage Results" MODIFIED="1688018100695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1674815954920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mookh.coverage" NAME="mookh Coverage Results" MODIFIED="1668048322562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$propertyScraper.coverage" NAME="propertyScraper Coverage Results" MODIFIED="1681560685919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1681820036520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
-    <SUITE FILE_PATH="coverage/Python_Programming$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1671859441674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
-    <SUITE FILE_PATH="coverage/Python_Programming$python_org_event_scraper.coverage" NAME="python.org event scraper Coverage Results" MODIFIED="1665642941860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Layout_Managers.coverage" NAME="Layout Managers Coverage Results" MODIFIED="1671860945824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mainV2.coverage" NAME="mainV2 Coverage Results" MODIFIED="1662519179379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main_V2.coverage" NAME="main V2 Coverage Results" MODIFIED="1681433223205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Trivia App[34] - API, tkinter" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Arguments.coverage" NAME="Arguments Coverage Results" MODIFIED="1663941162412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
-    <SUITE FILE_PATH="coverage/Python_Programming$threading_tests.coverage" NAME="threading_tests Coverage Results" MODIFIED="1663171269379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
     <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1684156630332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$internetSpeedTwitterBot.coverage" NAME="internetSpeedTwitterBot Coverage Results" MODIFIED="1679236977798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$mtickets.coverage" NAME="mtickets Coverage Results" MODIFIED="1667551544686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
-    <SUITE FILE_PATH="coverage/Python_Programming$sportybet.coverage" NAME="sportybet Coverage Results" MODIFIED="1662800696949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
-    <SUITE FILE_PATH="coverage/Python_Programming$Cookie_Clicker.coverage" NAME="Cookie Clicker Coverage Results" MODIFIED="1669038176187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
-    <SUITE FILE_PATH="coverage/Python_Programming$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1666516683742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
-    <SUITE FILE_PATH="coverage/Python_Programming$foxbet_today_soccer_matches.coverage" NAME="foxbet today soccer matches Coverage Results" MODIFIED="1662521577262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/foxbet/soccer" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main.coverage" NAME="main Coverage Results" MODIFIED="1676617811930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bio-lpg-gis" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1671859441674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test__3_.coverage" NAME="test (3) Coverage Results" MODIFIED="1668157332680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1681820036520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
     <SUITE FILE_PATH="coverage/Python_Programming$interaction.coverage" NAME="interaction Coverage Results" MODIFIED="1665654192052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$thewinningpost.coverage" NAME="thewinningpost Coverage Results" MODIFIED="1667359990247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1674815954920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Arguments.coverage" NAME="Arguments Coverage Results" MODIFIED="1663941162412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Filling_Forms.coverage" NAME="Filling Forms Coverage Results" MODIFIED="1671702852143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$widgets_examples.coverage" NAME="widgets examples Coverage Results" MODIFIED="1671861209749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
+    <SUITE FILE_PATH="coverage/Python_Programming$tikiti.coverage" NAME="tikiti Coverage Results" MODIFIED="1668171428838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mainV3.coverage" NAME="mainV3 Coverage Results" MODIFIED="1661864443665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Flight Deal Finder [39] - API, , Twilio, OOP, Sheety" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Cookie_Clicker.coverage" NAME="Cookie Clicker Coverage Results" MODIFIED="1669038176187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$python_decorators.coverage" NAME="python_decorators Coverage Results" MODIFIED="1688018100695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functions" />
     <SUITE FILE_PATH="coverage/Python_Programming$Treeview.coverage" NAME="Treeview Coverage Results" MODIFIED="1660891369217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
-    <SUITE FILE_PATH="coverage/Python_Programming$live_website.coverage" NAME="live_website Coverage Results" MODIFIED="1664786989083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Beatiful Soup [45]" />
-    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1685193054935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../telegram-music-chart" />
+    <SUITE FILE_PATH="coverage/Python_Programming$sportyBet_today_soccer_matches.coverage" NAME="sportyBet today soccer matches Coverage Results" MODIFIED="1662521621788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/sportyBet/soccer" />
+    <SUITE FILE_PATH="coverage/Python_Programming$quickstart.coverage" NAME="quickstart Coverage Results" MODIFIED="1669020965131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$internetSpeedTwitterBot.coverage" NAME="internetSpeedTwitterBot Coverage Results" MODIFIED="1679236977798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$utils.coverage" NAME="utils Coverage Results" MODIFIED="1681466470815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/requests" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$hello.coverage" NAME="hello Coverage Results" MODIFIED="1683704481018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hello_flask" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1666077177714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Programming$threading_tests.coverage" NAME="threading_tests Coverage Results" MODIFIED="1663171269379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main.coverage" NAME="main Coverage Results" MODIFIED="1682444788067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CSV" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mookh.coverage" NAME="mookh Coverage Results" MODIFIED="1668048322562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Python_Programming$python_org_event_scraper.coverage" NAME="python.org event scraper Coverage Results" MODIFIED="1665642941860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$submit_query.coverage" NAME="submit_query Coverage Results" MODIFIED="1672339228239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automating LinkedIn Jobs [49] - Selenium" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1680250805326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Internet Speed Twitter-Complaint Bot [52]" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$test.coverage" NAME="test Coverage Results" MODIFIED="1681647837358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Layout_Managers.coverage" NAME="Layout Managers Coverage Results" MODIFIED="1671860945824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI/Tkinter" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$propertyScraper.coverage" NAME="propertyScraper Coverage Results" MODIFIED="1681560685919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Property Scraper [53] - Selenium, Google Forms" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mainV2.coverage" NAME="mainV2 Coverage Results" MODIFIED="1662519179379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App" />
+    <SUITE FILE_PATH="coverage/Python_Programming$List_comprehension_vs_Generator_expression.coverage" NAME="List comprehension vs Generator expression Coverage Results" MODIFIED="1661930862863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/List and Dictionary Comprehension" />
+    <SUITE FILE_PATH="coverage/Python_Programming$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1671173553336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amazon Price Tracker [47] - BeautifulSoup, smtp" />
+    <SUITE FILE_PATH="coverage/Python_Programming$send_using_gmail_api.coverage" NAME="send using gmail api Coverage Results" MODIFIED="1670232466665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EMAIL[32] - smtp" />
+    <SUITE FILE_PATH="coverage/Python_Programming$foxbet_today_soccer_matches.coverage" NAME="foxbet today soccer matches Coverage Results" MODIFIED="1662521577262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-App/apis/foxbet/soccer" />
     <SUITE FILE_PATH="coverage/Python_Programming$Dictionary.coverage" NAME="Dictionary Coverage Results" MODIFIED="1663595258057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1666516683742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
+    <SUITE FILE_PATH="coverage/Python_Programming$mtickets.coverage" NAME="mtickets Coverage Results" MODIFIED="1667551544686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../the-early-bird" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$dv1_blackouts_7days_per_county.coverage" NAME="dv1_blackouts_7days_per_county Coverage Results" MODIFIED="1682521820072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../healthcare_reliability" />
+    <SUITE FILE_PATH="coverage/Python_Programming$List_Arrays_.coverage" NAME="List(Arrays) Coverage Results" MODIFIED="1668252848758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Programming$test.coverage" NAME="test Coverage Results" MODIFIED="1665969410734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Selenium [48]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$Sync_vs_Async_Programming.coverage" NAME="Sync vs Async Programming Coverage Results" MODIFIED="1663045863946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Asynchronous Python" />
+    <SUITE FILE_PATH="coverage/Python_Programming$live_website.coverage" NAME="live_website Coverage Results" MODIFIED="1664786989083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Beatiful Soup [45]" />
+    <SUITE FILE_PATH="coverage/Python_Programming$sportybet.coverage" NAME="sportybet Coverage Results" MODIFIED="1662800696949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Arb-Appv2" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1685193054935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../telegram-music-chart" />
+    <SUITE FILE_PATH="coverage/Vincent_Muchiri_GitHub_Repo$main_V2.coverage" NAME="main V2 Coverage Results" MODIFIED="1681433223205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Trivia App[34] - API, tkinter" />
   </component>
 </project>
