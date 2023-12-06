@@ -29,5 +29,5 @@ def get_response(user_response):
                "<img src='https://media.giphy.com/media/fxTFYor37uSe099noX/giphy.gif'>"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="127.0.0.9", port=8090, debug=True)
 # $env:FLASK_APP = "C:\Users\Vin Muchiri\OneDrive\Python Programming\hello_flask\hello.py"
