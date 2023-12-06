@@ -8,8 +8,8 @@ import smtplib
 # Yahoo = smtp.mail.yahoo.com, 465
 # Outlook = smtp-mail.outlook.com, 587
 
-my_email = "appdevemail.test@gmail.com"
-password = "hthxjiusuwxxvszy"
+my_email = ""
+password = ""
 #
 # # TODO Create connection
 with smtplib.SMTP("smtp.gmail.com") as connection:
@@ -20,6 +20,6 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.login(user=my_email, password=password)
     print("Sending the email...")
     connection.sendmail(from_addr=my_email,
-                        to_addrs="appdevemail.test@yahoo.com",
+                        to_addrs="",
                         msg="Subject: Python smtplib testing\n\n"
                             "#100DaysOfCode Day 32 Sending Email using Python smtplib.")
